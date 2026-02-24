@@ -259,12 +259,22 @@ class YouTubeSpeakerPipeline:
             diarization_result = self.diarizer.diarize(processing_audio)
         except Exception as e:
             logger.error(f"Diarization failed: {e}")
-            # Fallback: create dummy diarization
+            logger.warning("Falling back to single-speaker timeline. Check HF_TOKEN / pyannote model access / network.")
+            fallback_duration = 0.0
+            if sentences:
+                fallback_duration = max((s.get("end") or 0.0) for s in sentences)
             diarization_result = {
-                "segments": [],
+                "segments": [
+                    {
+                        "start": 0.0,
+                        "end": float(fallback_duration),
+                        "speaker": "SPEAKER_00",
+                        "duration": float(fallback_duration),
+                    }
+                ] if fallback_duration > 0 else [],
                 "speakers": ["SPEAKER_00"],
-                "speaker_stats": {"SPEAKER_00": 9999},
-                "total_duration": 0,
+                "speaker_stats": {"SPEAKER_00": float(fallback_duration) if fallback_duration > 0 else 0.0},
+                "total_duration": float(fallback_duration),
             }
         
         self.timing["diarization"] = time.time() - start_time
@@ -321,6 +331,14 @@ class YouTubeSpeakerPipeline:
             speaker_match_result = {}
             target_speaker = None
         
+        # Heuristic fallback: if only one speaker exists, treat it as target when matching is inconclusive.
+        if not target_speaker and len(diarization_result.get("speakers", [])) == 1:
+            only_speaker = diarization_result.get("speakers", [None])[0]
+            if only_speaker:
+                target_speaker = only_speaker
+                speaker_map[only_speaker] = target_name
+                logger.warning("No target match found; fallback to single detected speaker as TARGET")
+
         self.timing["matching"] = time.time() - start_time
         
         if target_speaker:
