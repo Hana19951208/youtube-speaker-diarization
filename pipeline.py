@@ -375,14 +375,6 @@ class YouTubeSpeakerPipeline:
             speaker_match_result = {}
             target_speaker = None
         
-        # Heuristic fallback: if only one speaker exists, treat it as target when matching is inconclusive.
-        if not target_speaker and len(diarization_result.get("speakers", [])) == 1:
-            only_speaker = diarization_result.get("speakers", [None])[0]
-            if only_speaker:
-                target_speaker = only_speaker
-                speaker_map[only_speaker] = target_name
-                logger.warning("No target match found; fallback to single detected speaker as TARGET")
-
         self.timing["matching"] = time.time() - start_time
         
         if target_speaker:

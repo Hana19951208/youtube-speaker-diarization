@@ -96,7 +96,8 @@ class SpeakerMatcher:
                 embeddings = self.embedding_model.encode_batch(signal)
                 embedding = embeddings[0].cpu().numpy()
 
-            embedding = embedding / np.linalg.norm(embedding)
+            embedding = np.asarray(embedding).reshape(-1)
+            embedding = embedding / (np.linalg.norm(embedding) + 1e-8)
             return embedding
 
         except Exception as e:
@@ -170,9 +171,14 @@ class SpeakerMatcher:
             Cosine similarity score
         """
         # Normalize embeddings
+        embedding1 = np.asarray(embedding1).reshape(-1)
+        embedding2 = np.asarray(embedding2).reshape(-1)
         embedding1 = embedding1 / (np.linalg.norm(embedding1) + 1e-8)
         embedding2 = embedding2 / (np.linalg.norm(embedding2) + 1e-8)
-        
+
+        if embedding1.shape[0] != embedding2.shape[0]:
+            raise ValueError(f"Embedding size mismatch: {embedding1.shape[0]} vs {embedding2.shape[0]}")
+
         # Compute cosine similarity
         similarity = np.dot(embedding1, embedding2)
         
@@ -254,24 +260,47 @@ class SpeakerMatcher:
                 seg_start = segment["start"]
                 seg_end = segment["end"]
                 seg_duration = segment["duration"]
-                
-                # Limit sample duration
-                if seg_duration > max_sample_duration:
-                    seg_end = seg_start + max_sample_duration
-                    seg_duration = max_sample_duration
-                
-                # Cut sample
-                sample_path = os.path.join(output_dir, f"{speaker}_sample_{len(samples)}.wav")
-                try:
-                    cut_audio_segment(audio_path, seg_start, seg_end, sample_path)
-                    samples.append(sample_path)
-                    total_duration += seg_duration
-                    
-                    if total_duration >= target_duration or len(samples) >= min_samples * 2:
-                        break
-                except Exception as e:
-                    logger.warning(f"Failed to cut sample: {e}")
-                    continue
+
+                # For very long segments, sample multiple windows across timeline
+                windows = []
+                if seg_duration > max_sample_duration * 1.5:
+                    n_windows = min(4, max(2, min_samples))
+                    stride = seg_duration / (n_windows + 1)
+                    for wi in range(1, n_windows + 1):
+                        center = seg_start + wi * stride
+                        w_start = max(seg_start, center - max_sample_duration / 2)
+                        w_end = min(seg_end, w_start + max_sample_duration)
+                        windows.append((w_start, w_end))
+                else:
+                    # short segment: take the whole segment (or truncate)
+                    w_end = seg_end
+                    if seg_duration > max_sample_duration:
+                        # prefer center clip instead of always the head (avoid intro music bias)
+                        center = (seg_start + seg_end) / 2
+                        w_start = max(seg_start, center - max_sample_duration / 2)
+                        w_end = min(seg_end, w_start + max_sample_duration)
+                    else:
+                        w_start = seg_start
+                    windows.append((w_start, w_end))
+
+                for w_start, w_end in windows:
+                    seg_len = max(0.0, w_end - w_start)
+                    if seg_len <= 0.2:
+                        continue
+                    sample_path = os.path.join(output_dir, f"{speaker}_sample_{len(samples)}.wav")
+                    try:
+                        cut_audio_segment(audio_path, w_start, w_end, sample_path)
+                        samples.append(sample_path)
+                        total_duration += seg_len
+
+                        if total_duration >= target_duration or len(samples) >= min_samples * 2:
+                            break
+                    except Exception as e:
+                        logger.warning(f"Failed to cut sample: {e}")
+                        continue
+
+                if total_duration >= target_duration or len(samples) >= min_samples * 2:
+                    break
             
             if not samples:
                 logger.warning(f"No samples collected for {speaker}")
