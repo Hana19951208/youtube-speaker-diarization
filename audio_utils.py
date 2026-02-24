@@ -226,6 +226,59 @@ def concatenate_audio_files(audio_paths: List[str], output_path: str):
         raise
 
 
+def check_ffmpeg() -> bool:
+    """Check if FFmpeg is installed and available in PATH."""
+    try:
+        result = subprocess.run(["ffmpeg", "-version"], capture_output=True, text=True)
+        if result.returncode == 0:
+            logger.info("FFmpeg found")
+            return True
+        return False
+    except FileNotFoundError:
+        return False
+
+
+def apply_vad(audio_path: str, output_path: str = None, min_silence_len: int = 500, silence_thresh: int = -40):
+    """
+    Simple silence-based VAD using pydub.
+
+    Returns:
+        (output_path, speech_segments)
+    """
+    from pydub.silence import detect_nonsilent
+
+    if output_path is None:
+        output_path = audio_path.replace('.wav', '_vad.wav')
+
+    audio = AudioSegment.from_file(audio_path)
+    nonsilent = detect_nonsilent(audio, min_silence_len=min_silence_len, silence_thresh=silence_thresh)
+
+    if not nonsilent:
+        logger.warning("No speech detected by VAD; returning original audio")
+        return audio_path, []
+
+    combined = AudioSegment.empty()
+    speech_segments = []
+    for start_ms, end_ms in nonsilent:
+        combined += audio[start_ms:end_ms]
+        speech_segments.append((start_ms / 1000.0, end_ms / 1000.0))
+
+    combined.export(output_path, format="wav")
+    logger.info(f"VAD output written: {output_path}")
+    return output_path, speech_segments
+
+
+def enhance_audio(audio_path: str, output_path: str = None) -> str:
+    """Basic audio enhancement (normalize)."""
+    if output_path is None:
+        output_path = audio_path.replace('.wav', '_enhanced.wav')
+
+    audio = AudioSegment.from_file(audio_path)
+    enhanced = audio.normalize()
+    enhanced.export(output_path, format="wav")
+    logger.info(f"Enhanced audio written: {output_path}")
+    return output_path
+
+
 if __name__ == "__main__":
-    # Test functions
     print("Audio utils module loaded successfully")

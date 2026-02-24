@@ -3,9 +3,11 @@ Speaker matching module for reference-based speaker identification.
 """
 import os
 import logging
+from collections import defaultdict
 from typing import Dict, List, Tuple, Optional, Any
 import numpy as np
 import torch
+import torchaudio
 import torch.nn.functional as F
 
 logging.basicConfig(level=logging.INFO)
