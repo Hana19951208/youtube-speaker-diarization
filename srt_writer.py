@@ -5,6 +5,7 @@ import json
 import logging
 from typing import List, Dict, Any, Optional
 from datetime import timedelta
+import numpy as np
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
