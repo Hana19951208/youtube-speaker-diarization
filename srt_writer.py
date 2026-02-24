@@ -148,6 +148,8 @@ def write_json(
             return int(obj)
         elif isinstance(obj, (np.floating, float)):
             return float(obj)
+        elif isinstance(obj, (np.bool_, bool)):
+            return bool(obj)
         elif isinstance(obj, dict):
             return {k: convert_to_serializable(v) for k, v in obj.items()}
         elif isinstance(obj, list):
