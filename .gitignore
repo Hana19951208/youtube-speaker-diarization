@@ -41,7 +41,7 @@ cache/
 runs/
 *.m4a
 *.webm
-
+speaker_samples/
 *.tmp
 *.log
 
