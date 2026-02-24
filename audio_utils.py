@@ -37,6 +37,7 @@ def download_youtube_audio(youtube_url: str, output_dir: str = ".") -> str:
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': output_template,
+        'noplaylist': True,  # force single-video behavior
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'wav',
