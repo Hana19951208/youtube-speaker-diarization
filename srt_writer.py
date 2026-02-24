@@ -7,6 +7,12 @@ from typing import List, Dict, Any, Optional
 from datetime import timedelta
 import numpy as np
 
+try:
+    from opencc import OpenCC
+    _opencc_t2s = OpenCC('t2s')
+except Exception:
+    _opencc_t2s = None
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -53,7 +59,14 @@ def clean_text(text: str) -> str:
     # Remove duplicate punctuation
     import re
     text = re.sub(r'([。！？；，.!?;,])\1+', r'\1', text)
-    
+
+    # Convert Traditional Chinese to Simplified Chinese (best effort)
+    if _opencc_t2s is not None:
+        try:
+            text = _opencc_t2s.convert(text)
+        except Exception:
+            pass
+
     return text.strip()
 
 

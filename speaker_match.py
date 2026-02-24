@@ -20,7 +20,7 @@ class SpeakerMatcher:
     def __init__(
         self,
         device: Optional[str] = None,
-        embedding_model: str = "speechbrain/ecapa-tdnn",
+        embedding_model: str = "speechbrain/spkrec-ecapa-voxceleb",
         similarity_threshold: float = 0.25,
     ):
         """

@@ -70,6 +70,10 @@ class PyAnnoteDiarizer:
         """
         Load the PyAnnote diarization pipeline.
         """
+        # Compatibility shim: some pyannote/audio deps still reference np.NaN
+        if not hasattr(np, "NaN"):
+            np.NaN = np.nan  # type: ignore[attr-defined]
+
         from pyannote.audio import Pipeline
         
         if not self.check_auth_token():
