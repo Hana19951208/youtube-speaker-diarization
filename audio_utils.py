@@ -75,6 +75,30 @@ def download_youtube_audio(
             if os.path.exists(expected_file):
                 new_wavs = [expected_file]
 
+        # Re-run friendly fallback:
+        # yt-dlp may overwrite an existing WAV filename, so "new file" detection can be empty.
+        if not new_wavs:
+            all_wavs = [
+                os.path.join(output_dir, f)
+                for f in os.listdir(output_dir)
+                if f.endswith('.wav')
+            ]
+            if all_wavs:
+                video_id = info.get('id') if isinstance(info, dict) else None
+                if video_id:
+                    id_matched = [p for p in all_wavs if f"_{video_id}.wav" in os.path.basename(p)]
+                    if id_matched:
+                        id_matched.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+                        new_wavs = [id_matched[0]]
+
+                if not new_wavs:
+                    all_wavs.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+                    new_wavs = [all_wavs[0]]
+                    logger.warning(
+                        "No newly created WAV detected; falling back to latest existing WAV: %s",
+                        new_wavs[0],
+                    )
+
         if not new_wavs:
             raise RuntimeError("yt-dlp finished but no WAV file was found in output_dir")
 
