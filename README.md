@@ -126,10 +126,12 @@ print("import ok")
 
 ### Kaggle
 
-1. Upload the notebook to Kaggle
-2. Enable GPU in Notebook Settings
-3. Enable Session Persistence in Kaggle settings for longer retention
-4. Follow the same steps as Colab
+已提供专用 notebook：`YouTube_Speaker_Diarization_Kaggle.ipynb`。
+
+1. 上传/打开该 Kaggle 版本 notebook
+2. 在 Notebook Settings 启用 GPU
+3. 建议开启 Session Persistence（缓存更稳）
+4. 从“一键初始化”cell开始顺序执行
 
 ## Output Files
 
