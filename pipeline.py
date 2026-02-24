@@ -2,10 +2,12 @@
 Main pipeline for YouTube video speaker diarization and identification.
 """
 import os
+import re
 import time
 import logging
 from pathlib import Path
 from typing import Dict, Any, Optional, List
+from urllib.parse import urlparse, parse_qs
 import torch
 
 from audio_utils import (
@@ -124,41 +126,83 @@ class YouTubeSpeakerPipeline:
         # Check prerequisites
         self._check_prerequisites()
         
-        # Step 1: Download YouTube audio
+        # Build per-video output directory
+        parsed = urlparse(youtube_url)
+        video_id = None
+        if "youtube.com" in parsed.netloc:
+            video_id = parse_qs(parsed.query).get("v", [None])[0]
+        elif "youtu.be" in parsed.netloc:
+            video_id = parsed.path.strip("/") or None
+        video_slug = video_id or re.sub(r"[^a-zA-Z0-9_-]", "_", youtube_url)[:64]
+        video_output_dir = os.path.join(self.output_dir, video_slug)
+        os.makedirs(video_output_dir, exist_ok=True)
+
+        # Step 1: Download YouTube audio (skip if WAV already exists)
         logger.info("=" * 60)
         logger.info("Step 1: Downloading YouTube audio")
         logger.info("=" * 60)
-        
+
         start_time = time.time()
-        try:
-            downloaded_audio = download_youtube_audio(
-                youtube_url,
-                self.output_dir,
-                playlist_mode=self.playlist_mode,
+        mono_candidates = sorted(Path(video_output_dir).glob("*_16k_mono.wav"))
+        if mono_candidates:
+            wav_path = str(mono_candidates[0])
+            downloaded_audio = wav_path.replace("_16k_mono.wav", ".wav")
+            logger.info(f"Reusing existing 16k mono wav: {wav_path}")
+            # cleanup leftover large source wavs, keep only *_16k_mono.wav
+            for p in Path(video_output_dir).glob("*.wav"):
+                if p.name != Path(wav_path).name and not p.name.endswith("_16k_mono.wav"):
+                    try:
+                        p.unlink()
+                        logger.info(f"Removed original large audio: {p}")
+                    except Exception as e:
+                        logger.warning(f"Failed to remove original audio {p}: {e}")
+            self.timing["download"] = 0.0
+            self.timing["transcode"] = 0.0
+        else:
+            existing_raw_wavs = sorted(
+                [str(p) for p in Path(video_output_dir).glob("*.wav") if not str(p).endswith("_16k_mono.wav")]
             )
-            logger.info(f"Downloaded: {downloaded_audio}")
-        except Exception as e:
-            logger.error(f"Failed to download YouTube audio: {e}")
-            raise
-        
-        self.timing["download"] = time.time() - start_time
-        
-        # Step 2: Transcode to 16k mono WAV
-        logger.info("=" * 60)
-        logger.info("Step 2: Transcoding to 16kHz mono WAV")
-        logger.info("=" * 60)
-        
-        start_time = time.time()
-        base_name = Path(downloaded_audio).stem
-        wav_path = os.path.join(self.output_dir, f"{base_name}_16k_mono.wav")
-        
-        try:
-            transcode_to_wav(downloaded_audio, wav_path, sample_rate=16000)
-        except Exception as e:
-            logger.error(f"Failed to transcode audio: {e}")
-            raise
-        
-        self.timing["transcode"] = time.time() - start_time
+            if existing_raw_wavs:
+                downloaded_audio = existing_raw_wavs[0]
+                logger.info(f"Reusing existing wav, skip download: {downloaded_audio}")
+            else:
+                try:
+                    downloaded_audio = download_youtube_audio(
+                        youtube_url,
+                        video_output_dir,
+                        playlist_mode=self.playlist_mode,
+                    )
+                    logger.info(f"Downloaded: {downloaded_audio}")
+                except Exception as e:
+                    logger.error(f"Failed to download YouTube audio: {e}")
+                    raise
+
+            self.timing["download"] = time.time() - start_time
+
+            # Step 2: Transcode to 16k mono WAV
+            logger.info("=" * 60)
+            logger.info("Step 2: Transcoding to 16kHz mono WAV")
+            logger.info("=" * 60)
+
+            start_time = time.time()
+            base_name = Path(downloaded_audio).stem
+            wav_path = os.path.join(video_output_dir, f"{base_name}_16k_mono.wav")
+
+            try:
+                transcode_to_wav(downloaded_audio, wav_path, sample_rate=16000)
+            except Exception as e:
+                logger.error(f"Failed to transcode audio: {e}")
+                raise
+
+            # remove larger source wav after 16k mono is produced
+            try:
+                if os.path.abspath(downloaded_audio) != os.path.abspath(wav_path) and os.path.exists(downloaded_audio):
+                    os.remove(downloaded_audio)
+                    logger.info(f"Removed original large audio: {downloaded_audio}")
+            except Exception as e:
+                logger.warning(f"Failed to remove original audio: {e}")
+
+            self.timing["transcode"] = time.time() - start_time
         
         # Step 3: Vocal separation (optional)
         processing_audio = wav_path
@@ -170,7 +214,7 @@ class YouTubeSpeakerPipeline:
             
             start_time = time.time()
             try:
-                vocals_path = separate_vocals(wav_path, self.output_dir)
+                vocals_path = separate_vocals(wav_path, video_output_dir)
                 if vocals_path != wav_path:
                     processing_audio = vocals_path
                     logger.info(f"Using vocals: {processing_audio}")
@@ -309,7 +353,7 @@ class YouTubeSpeakerPipeline:
             speaker_match_result = self.matcher.identify_speakers(
                 diarization_result,
                 processing_audio,
-                output_dir=os.path.join(self.output_dir, "speaker_samples"),
+                output_dir=os.path.join(video_output_dir, "speaker_samples"),
             )
             
             # Find target speaker
@@ -364,12 +408,10 @@ class YouTubeSpeakerPipeline:
         logger.info("Step 9: Writing Output Files")
         logger.info("=" * 60)
         
-        # Determine output filenames
-        video_id = Path(youtube_url).stem if "youtube.com" in youtube_url or "youtu.be" in youtube_url else "output"
-        output_prefix = os.path.join(self.output_dir, video_id)
-        
-        srt_path = f"{output_prefix}.srt"
-        json_path = f"{output_prefix}.json"
+        # Determine output filenames: keep same basename as processed wav
+        output_base = Path(wav_path).stem
+        srt_path = os.path.join(video_output_dir, f"{output_base}.srt")
+        json_path = os.path.join(video_output_dir, f"{output_base}.json")
         
         # Write SRT
         target_speaker_mapped = speaker_map.get(target_speaker, target_speaker) if target_speaker else None
