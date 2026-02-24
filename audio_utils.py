@@ -16,7 +16,11 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def download_youtube_audio(youtube_url: str, output_dir: str = ".") -> str:
+def download_youtube_audio(
+    youtube_url: str,
+    output_dir: str = ".",
+    playlist_mode: str = "single",  # single | all
+) -> str:
     """
     Download audio from YouTube video using yt-dlp.
     
@@ -34,10 +38,13 @@ def download_youtube_audio(youtube_url: str, output_dir: str = ".") -> str:
     # Use a template for the output filename
     output_template = os.path.join(output_dir, "%(title)s_%(id)s.%(ext)s")
     
+    if playlist_mode not in {"single", "all"}:
+        raise ValueError("playlist_mode must be 'single' or 'all'")
+
     ydl_opts = {
         'format': 'bestaudio/best',
         'outtmpl': output_template,
-        'noplaylist': True,  # force single-video behavior
+        'noplaylist': playlist_mode != "all",
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'wav',
@@ -48,20 +55,42 @@ def download_youtube_audio(youtube_url: str, output_dir: str = ".") -> str:
     }
     
     try:
+        existing_wavs = set(f for f in os.listdir(output_dir) if f.endswith('.wav'))
+
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(youtube_url, download=True)
+
+        # Newly created wav files
+        new_wavs = [
+            os.path.join(output_dir, f)
+            for f in os.listdir(output_dir)
+            if f.endswith('.wav') and f not in existing_wavs
+        ]
+
+        # Fallback: infer from metadata for single-video mode
+        if not new_wavs and playlist_mode == "single":
             title = info.get('title', 'unknown')
             video_id = info.get('id', 'unknown')
-            
-            # Find the downloaded file
             expected_file = os.path.join(output_dir, f"{title}_{video_id}.wav")
-            
-            # Handle special characters in filename
-            for file in os.listdir(output_dir):
-                if file.endswith('.wav') and video_id in file:
-                    return os.path.join(output_dir, file)
-            
-            return expected_file
+            if os.path.exists(expected_file):
+                new_wavs = [expected_file]
+
+        if not new_wavs:
+            raise RuntimeError("yt-dlp finished but no WAV file was found in output_dir")
+
+        # Sort for deterministic behavior
+        new_wavs = sorted(new_wavs)
+
+        # If playlist mode=all, save a manifest and return the first one for current single-run pipeline
+        if playlist_mode == "all" and len(new_wavs) > 1:
+            manifest_path = os.path.join(output_dir, "playlist_manifest.json")
+            import json
+            with open(manifest_path, "w", encoding="utf-8") as mf:
+                json.dump({"count": len(new_wavs), "files": new_wavs}, mf, ensure_ascii=False, indent=2)
+            logger.info(f"Playlist mode=all downloaded {len(new_wavs)} files. Manifest: {manifest_path}")
+            logger.info("Current pipeline run will process the first file; use manifest to batch process all files.")
+
+        return new_wavs[0]
     except Exception as e:
         logger.error(f"Failed to download YouTube audio: {e}")
         raise

@@ -82,14 +82,47 @@ python main.py \
 
 ### Google Colab
 
-Open the `YouTube_Speaker_Diarization.ipynb` notebook in Colab:
+Open the `YouTube_Speaker_Diarization.ipynb` notebook in Colab, or use this **one-click init cell**:
 
-1. Upload the notebook to Google Colab
-2. Run the setup cells to install dependencies
-3. Mount Google Drive for persistent caching (optional but recommended)
-4. Set your HF_TOKEN
-5. Upload reference audio
-6. Configure and run the pipeline
+```python
+# ===== Colab One-Click Init =====
+import os, sys
+
+REPO_URL = "https://github.com/Hana19951208/youtube-speaker-diarization.git"
+REPO_DIR = "/content/youtube-speaker-diarization"
+HF_TOKEN = ""  # 填你的 token
+
+# 1) System deps
+!apt-get update -y
+!apt-get install -y ffmpeg
+
+# 2) Fresh clone
+%cd /content
+!rm -rf {REPO_DIR}
+!git clone {REPO_URL}
+%cd {REPO_DIR}
+
+# 3) Stable torch stack (fix torchvision::nms issue)
+!pip uninstall -y torch torchvision torchaudio -q
+!pip install -q torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1
+
+# 4) Project deps
+!pip install -q -r requirements.txt
+
+# 5) Env
+if HF_TOKEN:
+    os.environ["HF_TOKEN"] = HF_TOKEN
+
+print("✅ Init done. Please Runtime -> Restart runtime once, then continue.")
+```
+
+重启 Runtime 后执行：
+
+```python
+%cd /content/youtube-speaker-diarization
+from pipeline import YouTubeSpeakerPipeline
+print("import ok")
+```
 
 ### Kaggle
 

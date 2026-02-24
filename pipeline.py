@@ -48,6 +48,7 @@ class YouTubeSpeakerPipeline:
         do_vad: bool = False,
         do_enhance: bool = False,
         similarity_threshold: float = 0.25,
+        playlist_mode: str = "single",
     ):
         """
         Initialize the pipeline.
@@ -62,6 +63,7 @@ class YouTubeSpeakerPipeline:
             do_vad: Whether to apply VAD
             do_enhance: Whether to apply audio enhancement
             similarity_threshold: Threshold for speaker matching
+            playlist_mode: 'single' (default) or 'all' for playlist download
         """
         self.hf_token = hf_token or os.environ.get("HF_TOKEN")
         self.output_dir = output_dir
@@ -72,6 +74,7 @@ class YouTubeSpeakerPipeline:
         self.do_vad = do_vad
         self.do_enhance = do_enhance
         self.similarity_threshold = similarity_threshold
+        self.playlist_mode = playlist_mode
         
         # Create output directory
         os.makedirs(output_dir, exist_ok=True)
@@ -128,7 +131,11 @@ class YouTubeSpeakerPipeline:
         
         start_time = time.time()
         try:
-            downloaded_audio = download_youtube_audio(youtube_url, self.output_dir)
+            downloaded_audio = download_youtube_audio(
+                youtube_url,
+                self.output_dir,
+                playlist_mode=self.playlist_mode,
+            )
             logger.info(f"Downloaded: {downloaded_audio}")
         except Exception as e:
             logger.error(f"Failed to download YouTube audio: {e}")
@@ -436,6 +443,7 @@ Environment Variables:
     parser.add_argument("--vad", action="store_true", help="Apply VAD")
     parser.add_argument("--enhance", action="store_true", help="Apply audio enhancement")
     parser.add_argument("--similarity_threshold", type=float, default=0.25, help="Speaker matching threshold")
+    parser.add_argument("--playlist_mode", choices=["single", "all"], default="single", help="YouTube playlist handling mode")
     
     args = parser.parse_args()
     
@@ -453,6 +461,7 @@ Environment Variables:
         do_vad=args.vad,
         do_enhance=args.enhance,
         similarity_threshold=args.similarity_threshold,
+        playlist_mode=args.playlist_mode,
     )
     
     results = pipeline.process(
