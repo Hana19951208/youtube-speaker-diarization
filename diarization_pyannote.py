@@ -264,8 +264,17 @@ def assign_speakers_to_sentences(
             sentence["speaker"] = mapped_speaker
             sentence["speaker_overlap_ratio"] = overlap_ratio
         else:
-            # Use nearest speaker by time
-            sentence["speaker"] = "unknown"
+            # Fallback: assign nearest diarization segment by center time (instead of unknown)
+            if diarization_segments:
+                sent_center = (sent_start + sent_end) / 2.0
+                nearest_seg = min(
+                    diarization_segments,
+                    key=lambda seg: abs(((seg.get("start", 0) + seg.get("end", 0)) / 2.0) - sent_center),
+                )
+                nearest_speaker = nearest_seg.get("speaker", "unknown")
+                sentence["speaker"] = speaker_map.get(nearest_speaker, nearest_speaker)
+            else:
+                sentence["speaker"] = "unknown"
             sentence["speaker_overlap_ratio"] = overlap_ratio
         
         sentences_with_speakers.append(sentence)

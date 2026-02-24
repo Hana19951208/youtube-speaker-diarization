@@ -354,11 +354,12 @@ class YouTubeSpeakerPipeline:
         json_path = f"{output_prefix}.json"
         
         # Write SRT
+        target_speaker_mapped = speaker_map.get(target_speaker, target_speaker) if target_speaker else None
         write_srt(
             sentences_with_speakers,
             srt_path,
             speaker_map,
-            target_speaker,
+            target_speaker_mapped,
         )
         
         # Create summary
@@ -384,6 +385,7 @@ class YouTubeSpeakerPipeline:
             "speaker_matching": speaker_match_result,
             "speaker_mapping": speaker_map,
             "target_speaker": target_speaker,
+            "target_speaker_mapped": target_speaker_mapped,
             "config": {
                 "youtube_url": youtube_url,
                 "ref_audio_path": ref_audio_path,
