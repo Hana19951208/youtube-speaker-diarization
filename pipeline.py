@@ -199,9 +199,9 @@ class YouTubeSpeakerPipeline:
             
             self.timing["vad"] = time.time() - start_time
         
-        # Step 5: ASR with WhisperX
+        # Step 5: ASR with Faster-Whisper
         logger.info("=" * 60)
-        logger.info("Step 5: ASR with WhisperX")
+        logger.info("Step 5: ASR with Faster-Whisper")
         logger.info("=" * 60)
         
         start_time = time.time()
@@ -220,11 +220,26 @@ class YouTubeSpeakerPipeline:
         
         self.timing["asr"] = time.time() - start_time
         
-        # Split into sentences
-        words = self.transcriber.get_word_level_segments(transcription_result)
+        # Prefer sentence-level segments from faster-whisper
         detected_language = transcription_result.get("language", language or "en")
-        sentences = split_into_sentences(words, language=detected_language)
-        
+        raw_segments = transcription_result.get("segments", [])
+
+        if raw_segments:
+            sentences = [
+                {
+                    "text": (seg.get("text") or "").strip(),
+                    "start": seg.get("start"),
+                    "end": seg.get("end"),
+                    "words": seg.get("words", []),
+                }
+                for seg in raw_segments
+                if (seg.get("text") or "").strip() and seg.get("start") is not None and seg.get("end") is not None
+            ]
+            words = self.transcriber.get_word_level_segments(transcription_result)
+        else:
+            words = self.transcriber.get_word_level_segments(transcription_result)
+            sentences = split_into_sentences(words, language=detected_language)
+
         logger.info(f"ASR complete: {len(sentences)} sentences, {len(words)} words")
         
         # Step 6: Speaker diarization
