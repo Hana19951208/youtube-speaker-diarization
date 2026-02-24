@@ -1,51 +1,4716 @@
 {
   "summary": {
-    "audio_info": {
-      "duration_seconds": 983.9388794567058,
-      "duration_formatted": "0:16:23"
-    },
     "processing_summary": {
       "total_sentences": 783,
-      "total_speakers": 18,
       "speaker_sentence_counts": {
         "speaker3": 394,
         "TARGET": 249,
         "speaker2": 140
-      },
-      "target_speaker": "SPEAKER_03"
-    },
-    "timing": {
-      "total_processing_seconds": 909.8515117168427,
-      "breakdown": {
-        "download": 0.0,
-        "transcode": 0.0,
-        "asr": 94.73582720756531,
-        "diarization": 806.5768821239471,
-        "matching": 8.5388023853302
       }
+    }
+  },
+  "sentences": [
+    {
+      "start": 2.29,
+      "end": 119.68,
+      "speaker": "speaker3",
+      "text": "我那小小小莉嘛"
     },
-    "diarization_info": {
-      "speaker_stats": {
-        "SPEAKER_07": 22.98811544991625,
-        "SPEAKER_14": 35.05942275042295,
-        "SPEAKER_13": 12.020373514431014,
-        "SPEAKER_16": 84.66893039049233,
-        "SPEAKER_12": 10.780984719864932,
-        "SPEAKER_06": 20.11884550084912,
-        "SPEAKER_03": 298.2852292020368,
-        "SPEAKER_00": 7.741935483871146,
-        "SPEAKER_02": 48.641765704583804,
-        "SPEAKER_17": 87.57215619694296,
-        "SPEAKER_01": 26.70628183361623,
-        "SPEAKER_11": 28.641765704583122,
-        "SPEAKER_04": 177.26655348047643,
-        "SPEAKER_09": 47.3174872665536,
-        "SPEAKER_08": 33.78607809847131,
-        "SPEAKER_15": 19.202037351443778,
-        "SPEAKER_05": 14.142614601018522,
-        "SPEAKER_10": 8.998302207131474
-      }
+    {
+      "start": 119.68,
+      "end": 125.379,
+      "speaker": "TARGET",
+      "text": "你找我了吗"
     },
-    "speaker_match": {
-      "SPEAKER_07": {
-        "is_target": 
+    {
+      "start": 125.379,
+      "end": 129.3,
+      "speaker": "TARGET",
+      "text": "那那行了"
+    },
+    {
+      "start": 130.3,
+      "end": 131.3,
+      "speaker": "TARGET",
+      "text": "那那好了"
+    },
+    {
+      "start": 131.3,
+      "end": 135.5,
+      "speaker": "TARGET",
+      "text": "以后办啥事灵活点啊"
+    },
+    {
+      "start": 136.5,
+      "end": 137.5,
+      "speaker": "speaker3",
+      "text": "知道了彪哥"
+    },
+    {
+      "start": 137.5,
+      "end": 148.9,
+      "speaker": "speaker3",
+      "text": "有结婚的新娘们呀"
+    },
+    {
+      "start": 149.9,
+      "end": 153.979,
+      "speaker": "speaker3",
+      "text": "这不说你咋不说话呢"
+    },
+    {
+      "start": 154.979,
+      "end": 155.979,
+      "speaker": "speaker3",
+      "text": "你咋去了"
+    },
+    {
+      "start": 155.979,
+      "end": 156.979,
+      "speaker": "speaker3",
+      "text": "哑巴了"
+    },
+    {
+      "start": 157.979,
+      "end": 158.979,
+      "speaker": "speaker3",
+      "text": "你平常不挺冷静的吗"
+    },
+    {
+      "start": 159.979,
+      "end": 160.979,
+      "speaker": "speaker3",
+      "text": "你咋不说话呢"
+    },
+    {
+      "start": 162.979,
+      "end": 163.979,
+      "speaker": "speaker3",
+      "text": "把你姑娘给我找回来呀"
+    },
+    {
+      "start": 163.979,
+      "end": 164.979,
+      "speaker": "speaker3",
+      "text": "跑哪去了"
+    },
+    {
+      "start": 165.979,
+      "end": 167.979,
+      "speaker": "speaker3",
+      "text": "你看各村人都来的"
+    },
+    {
+      "start": 168.979,
+      "end": 169.979,
+      "speaker": "speaker3",
+      "text": "还有村长"
+    },
+    {
+      "start": 169.979,
+      "end": 170.979,
+      "speaker": "speaker3",
+      "text": "我那些哥们朋友全来了"
+    },
+    {
+      "start": 170.979,
+      "end": 171.979,
+      "speaker": "speaker3",
+      "text": "你让我咋交代"
+    },
+    {
+      "start": 171.979,
+      "end": 173.979,
+      "speaker": "speaker3",
+      "text": "你说你让我咋交代嘛"
+    },
+    {
+      "start": 173.979,
+      "end": 175.979,
+      "speaker": "speaker3",
+      "text": "我啥时候办过这事啊"
+    },
+    {
+      "start": 176.979,
+      "end": 177.979,
+      "speaker": "speaker3",
+      "text": "十里八村里"
+    },
+    {
+      "start": 177.979,
+      "end": 178.979,
+      "speaker": "speaker3",
+      "text": "有没有像你这样人呢"
+    },
+    {
+      "start": 179.979,
+      "end": 180.979,
+      "speaker": "speaker3",
+      "text": "妈你可坑老人了"
+    },
+    {
+      "start": 181.979,
+      "end": 182.979,
+      "speaker": "speaker3",
+      "text": "行行行 别围著 别围著"
+    },
+    {
+      "start": 183.979,
+      "end": 184.979,
+      "speaker": "speaker3",
+      "text": "一会儿吃饭啊 孩子"
+    },
+    {
+      "start": 184.979,
+      "end": 185.979,
+      "speaker": "speaker3",
+      "text": "别围著了"
+    },
+    {
+      "start": 185.979,
+      "end": 191.169,
+      "speaker": "speaker3",
+      "text": "咋说句话呀"
+    },
+    {
+      "start": 191.169,
+      "end": 192.169,
+      "speaker": "speaker3",
+      "text": "妈咋说呀"
+    },
+    {
+      "start": 195.169,
+      "end": 197.169,
+      "speaker": "speaker3",
+      "text": "我儿子配不上你姑娘咋的呀"
+    },
+    {
+      "start": 198.169,
+      "end": 199.169,
+      "speaker": "speaker3",
+      "text": "你早说呀"
+    },
+    {
+      "start": 200.169,
+      "end": 202.169,
+      "speaker": "speaker3",
+      "text": "三个块钱拿去了"
+    },
+    {
+      "start": 202.169,
+      "end": 203.169,
+      "speaker": "speaker3",
+      "text": "日子不你自己定的"
+    },
+    {
+      "start": 205.169,
+      "end": 206.169,
+      "speaker": "speaker3",
+      "text": "不你耍啥熊啊"
+    },
+    {
+      "start": 206.169,
+      "end": 207.169,
+      "speaker": "speaker3",
+      "text": "你说话你呀"
+    },
+    {
+      "start": 207.169,
+      "end": 208.169,
+      "speaker": "speaker3",
+      "text": "我跟你说话呢呀"
+    },
+    {
+      "start": 214.259,
+      "end": 216.259,
+      "speaker": "speaker3",
+      "text": "这事你要是不给我弄明白了"
+    },
+    {
+      "start": 216.259,
+      "end": 217.259,
+      "speaker": "speaker3",
+      "text": "我跟你没完"
+    },
+    {
+      "start": 217.259,
+      "end": 218.259,
+      "speaker": "speaker3",
+      "text": "不见咋的丑子"
+    },
+    {
+      "start": 219.259,
+      "end": 220.259,
+      "speaker": "speaker3",
+      "text": "你看我咋受著你"
+    },
+    {
+      "start": 220.259,
+      "end": 223.59,
+      "speaker": "speaker3",
+      "text": "你丑子"
+    },
+    {
+      "start": 223.59,
+      "end": 224.59,
+      "speaker": "speaker3",
+      "text": "爸你别吵著"
+    },
+    {
+      "start": 224.59,
+      "end": 225.59,
+      "speaker": "speaker3",
+      "text": "我还是挺得不好"
+    },
+    {
+      "start": 225.59,
+      "end": 232.159,
+      "speaker": "speaker3",
+      "text": "把人上哪儿飞来"
+    },
+    {
+      "start": 234.729,
+      "end": 235.729,
+      "speaker": "speaker3",
+      "text": "你咋干啥"
+    },
+    {
+      "start": 235.729,
+      "end": 236.729,
+      "speaker": "speaker3",
+      "text": "你快找去你呀"
+    },
+    {
+      "start": 236.729,
+      "end": 237.729,
+      "speaker": "speaker3",
+      "text": "耍什么熊呢"
+    },
+    {
+      "start": 238.729,
+      "end": 239.729,
+      "speaker": "speaker3",
+      "text": "快进"
+    },
+    {
+      "start": 239.729,
+      "end": 244.599,
+      "speaker": "speaker3",
+      "text": "你瞅我找不回来的"
+    },
+    {
+      "start": 244.599,
+      "end": 245.599,
+      "speaker": "speaker3",
+      "text": "你看我咋受著"
+    },
+    {
+      "start": 246.599,
+      "end": 286.319,
+      "speaker": "TARGET",
+      "text": "见著客人"
+    },
+    {
+      "start": 286.319,
+      "end": 287.319,
+      "speaker": "TARGET",
+      "text": "擦一下"
+    },
+    {
+      "start": 287.319,
+      "end": 288.319,
+      "speaker": "TARGET",
+      "text": "没没没不了了"
+    },
+    {
+      "start": 289.319,
+      "end": 290.319,
+      "speaker": "TARGET",
+      "text": "这这都都都属于"
+    },
+    {
+      "start": 290.319,
+      "end": 295.35,
+      "speaker": "TARGET",
+      "text": "都属于"
+    },
+    {
+      "start": 296.35,
+      "end": 297.35,
+      "speaker": "TARGET",
+      "text": "见著像我这"
+    },
+    {
+      "start": 297.35,
+      "end": 303.54,
+      "speaker": "TARGET",
+      "text": "知道啥意思吗"
+    },
+    {
+      "start": 303.54,
+      "end": 304.54,
+      "speaker": "TARGET",
+      "text": "表示尊重"
+    },
+    {
+      "start": 305.54,
+      "end": 306.54,
+      "speaker": "TARGET",
+      "text": "握握手"
+    },
+    {
+      "start": 307.54,
+      "end": 308.54,
+      "speaker": "TARGET",
+      "text": "手指都揹过去"
+    },
+    {
+      "start": 308.54,
+      "end": 309.54,
+      "speaker": "TARGET",
+      "text": "这这这啥意思"
+    },
+    {
+      "start": 309.54,
+      "end": 310.54,
+      "speaker": "speaker3",
+      "text": "你啥说的"
+    },
+    {
+      "start": 310.54,
+      "end": 311.54,
+      "speaker": "TARGET",
+      "text": "表示礼尚"
+    },
+    {
+      "start": 311.54,
+      "end": 312.54,
+      "speaker": "TARGET",
+      "text": "这事彪哥告诉你们"
+    },
+    {
+      "start": 312.54,
+      "end": 313.54,
+      "speaker": "TARGET",
+      "text": "多少回了"
+    },
+    {
+      "start": 313.54,
+      "end": 314.54,
+      "speaker": "TARGET",
+      "text": "老记不住了"
+    },
+    {
+      "start": 314.54,
+      "end": 315.54,
+      "speaker": "TARGET",
+      "text": "就就是假"
+    },
+    {
+      "start": 315.54,
+      "end": 316.54,
+      "speaker": "TARGET",
+      "text": "假委托做人"
+    },
+    {
+      "start": 317.54,
+      "end": 318.54,
+      "speaker": "TARGET",
+      "text": "谦虚"
+    },
+    {
+      "start": 319.54,
+      "end": 320.54,
+      "speaker": "TARGET",
+      "text": "这个"
+    },
+    {
+      "start": 320.54,
+      "end": 321.54,
+      "speaker": "TARGET",
+      "text": "坐有坐相"
+    },
+    {
+      "start": 321.54,
+      "end": 322.54,
+      "speaker": "TARGET",
+      "text": "站有站相"
+    },
+    {
+      "start": 322.54,
+      "end": 323.54,
+      "speaker": "TARGET",
+      "text": "站如松"
+    },
+    {
+      "start": 323.54,
+      "end": 324.54,
+      "speaker": "TARGET",
+      "text": "坐如钟"
+    },
+    {
+      "start": 324.54,
+      "end": 325.54,
+      "speaker": "TARGET",
+      "text": "坐坐钟"
+    },
+    {
+      "start": 326.54,
+      "end": 327.54,
+      "speaker": "TARGET",
+      "text": "彪哥"
+    },
+    {
+      "start": 328.54,
+      "end": 330.54,
+      "speaker": "TARGET",
+      "text": "你肩膀头刺那玩意儿"
+    },
+    {
+      "start": 330.54,
+      "end": 331.54,
+      "speaker": "TARGET",
+      "text": "有什么好说的"
+    },
+    {
+      "start": 331.54,
+      "end": 332.54,
+      "speaker": "TARGET",
+      "text": "这太有价值了"
+    },
+    {
+      "start": 332.54,
+      "end": 333.54,
+      "speaker": "TARGET",
+      "text": "这叫纹身"
+    },
+    {
+      "start": 333.54,
+      "end": 334.54,
+      "speaker": "TARGET",
+      "text": "今天天凉"
+    },
+    {
+      "start": 334.54,
+      "end": 336.54,
+      "speaker": "TARGET",
+      "text": "我就不拖下去展示了"
+    },
+    {
+      "start": 337.54,
+      "end": 338.54,
+      "speaker": "TARGET",
+      "text": "就是啥呢"
+    },
+    {
+      "start": 339.54,
+      "end": 340.54,
+      "speaker": "TARGET",
+      "text": "左兴隆右白虎"
+    },
+    {
+      "start": 340.54,
+      "end": 342.54,
+      "speaker": "TARGET",
+      "text": "天窟楼候选舞"
+    },
+    {
+      "start": 344.54,
+      "end": 346.54,
+      "speaker": "TARGET",
+      "text": "一般我打人啊"
+    },
+    {
+      "start": 346.54,
+      "end": 347.54,
+      "speaker": "TARGET",
+      "text": "动手之前"
+    },
+    {
+      "start": 348.54,
+      "end": 349.54,
+      "speaker": "TARGET",
+      "text": "我要找一个就是"
+    },
+    {
+      "start": 350.54,
+      "end": 352.54,
+      "speaker": "TARGET",
+      "text": "廉价点便宜点的"
+    },
+    {
+      "start": 352.54,
+      "end": 353.54,
+      "speaker": "TARGET",
+      "text": "譬如皮友"
+    },
+    {
+      "start": 353.54,
+      "end": 354.54,
+      "speaker": "TARGET",
+      "text": "我摔一下"
+    },
+    {
+      "start": 355.54,
+      "end": 356.54,
+      "speaker": "TARGET",
+      "text": "一摔"
+    },
+    {
+      "start": 357.54,
+      "end": 358.54,
+      "speaker": "TARGET",
+      "text": "一上来"
+    },
+    {
+      "start": 358.54,
+      "end": 359.54,
+      "speaker": "TARGET",
+      "text": "我就要"
+    },
+    {
+      "start": 359.54,
+      "end": 361.54,
+      "speaker": "TARGET",
+      "text": "我就要发"
+    },
+    {
+      "start": 361.54,
+      "end": 362.54,
+      "speaker": "TARGET",
+      "text": "发呗"
+    },
+    {
+      "start": 362.54,
+      "end": 363.54,
+      "speaker": "TARGET",
+      "text": "发发送"
+    },
+    {
+      "start": 363.54,
+      "end": 364.54,
+      "speaker": "TARGET",
+      "text": "咔咔咔"
+    },
+    {
+      "start": 364.54,
+      "end": 365.54,
+      "speaker": "TARGET",
+      "text": "我发"
+    },
+    {
+      "start": 365.54,
+      "end": 366.54,
+      "speaker": "TARGET",
+      "text": "全赏"
+    },
+    {
+      "start": 366.54,
+      "end": 391.439,
+      "speaker": "speaker3",
+      "text": "没提我啊"
+    },
+    {
+      "start": 391.439,
+      "end": 396.18,
+      "speaker": "speaker3",
+      "text": "你提"
+    },
+    {
+      "start": 396.18,
+      "end": 397.18,
+      "speaker": "TARGET",
+      "text": "提彪哥了"
+    },
+    {
+      "start": 397.18,
+      "end": 398.18,
+      "speaker": "speaker3",
+      "text": "我提你了"
+    },
+    {
+      "start": 398.18,
+      "end": 399.18,
+      "speaker": "speaker3",
+      "text": "就是提你了"
+    },
+    {
+      "start": 399.18,
+      "end": 400.18,
+      "speaker": "speaker3",
+      "text": "不好使啊"
+    },
+    {
+      "start": 400.18,
+      "end": 401.18,
+      "speaker": "TARGET",
+      "text": "这是活够了"
+    },
+    {
+      "start": 401.18,
+      "end": 402.18,
+      "speaker": "TARGET",
+      "text": "咱们看"
+    },
+    {
+      "start": 402.18,
+      "end": 403.18,
+      "speaker": "TARGET",
+      "text": "别动"
+    },
+    {
+      "start": 404.18,
+      "end": 405.18,
+      "speaker": "TARGET",
+      "text": "有啥事"
+    },
+    {
+      "start": 405.18,
+      "end": 408.459,
+      "speaker": "TARGET",
+      "text": "拔好烂"
+    },
+    {
+      "start": 408.459,
+      "end": 409.459,
+      "speaker": "TARGET",
+      "text": "活够了这是"
+    },
+    {
+      "start": 409.459,
+      "end": 435.0,
+      "speaker": "speaker3",
+      "text": "这像是没事的样子吧"
+    },
+    {
+      "start": 436.0,
+      "end": 437.0,
+      "speaker": "speaker3",
+      "text": "你跑哪儿去了"
+    },
+    {
+      "start": 438.0,
+      "end": 440.0,
+      "speaker": "speaker3",
+      "text": "用你的时候你不在"
+    },
+    {
+      "start": 440.0,
+      "end": 441.0,
+      "speaker": "speaker3",
+      "text": "用不著你的时候"
+    },
+    {
+      "start": 441.0,
+      "end": 443.0,
+      "speaker": "speaker3",
+      "text": "成天在我身边瞎晃悠"
+    },
+    {
+      "start": 443.0,
+      "end": 444.0,
+      "speaker": "speaker3",
+      "text": "你说怎么回事啊"
+    },
+    {
+      "start": 445.0,
+      "end": 446.0,
+      "speaker": "TARGET",
+      "text": "走走走"
+    },
+    {
+      "start": 446.0,
+      "end": 447.0,
+      "speaker": "TARGET",
+      "text": "别动啊"
+    },
+    {
+      "start": 447.0,
+      "end": 448.0,
+      "speaker": "TARGET",
+      "text": "别乱"
+    },
+    {
+      "start": 448.0,
+      "end": 449.0,
+      "speaker": "TARGET",
+      "text": "我一个人守著啊"
+    },
+    {
+      "start": 449.0,
+      "end": 450.0,
+      "speaker": "TARGET",
+      "text": "都别动"
+    },
+    {
+      "start": 450.0,
+      "end": 452.819,
+      "speaker": "speaker3",
+      "text": "不出去啊"
+    },
+    {
+      "start": 453.819,
+      "end": 454.819,
+      "speaker": "speaker3",
+      "text": "经理"
+    },
+    {
+      "start": 454.819,
+      "end": 455.819,
+      "speaker": "speaker3",
+      "text": "谁啊"
+    },
+    {
+      "start": 455.819,
+      "end": 456.819,
+      "speaker": "speaker3",
+      "text": "上次房间了"
+    },
+    {
+      "start": 457.819,
+      "end": 458.819,
+      "speaker": "speaker3",
+      "text": "那个屋"
+    },
+    {
+      "start": 458.819,
+      "end": 472.18,
+      "speaker": "TARGET",
+      "text": "怎么的"
+    },
+    {
+      "start": 472.18,
+      "end": 476.189,
+      "speaker": "TARGET",
+      "text": "到我这撒野来了"
+    },
+    {
+      "start": 476.189,
+      "end": 486.019,
+      "speaker": "TARGET",
+      "text": "认识一下"
+    },
+    {
+      "start": 488.75,
+      "end": 490.75,
+      "speaker": "TARGET",
+      "text": "维多利亚娱乐广场"
+    },
+    {
+      "start": 490.75,
+      "end": 491.75,
+      "speaker": "TARGET",
+      "text": "吴总经理"
+    },
+    {
+      "start": 491.75,
+      "end": 492.75,
+      "speaker": "TARGET",
+      "text": "地保镖"
+    },
+    {
+      "start": 492.75,
+      "end": 493.75,
+      "speaker": "TARGET",
+      "text": "范德标先生"
+    },
+    {
+      "start": 494.75,
+      "end": 500.1,
+      "speaker": "TARGET",
+      "text": "不熟说"
+    },
+    {
+      "start": 500.1,
+      "end": 515.7,
+      "speaker": "TARGET",
+      "text": "挺有先心的"
+    },
+    {
+      "start": 515.7,
+      "end": 516.7,
+      "speaker": "TARGET",
+      "text": "笑我啊"
+    },
+    {
+      "start": 517.7,
+      "end": 529.7,
+      "speaker": "speaker3",
+      "text": "要哥急了"
+    },
+    {
+      "start": 534.639,
+      "end": 535.639,
+      "speaker": "TARGET",
+      "text": "快去看看"
+    },
+    {
+      "start": 536.639,
+      "end": 597.059,
+      "speaker": "speaker3",
+      "text": "你怎么了"
+    },
+    {
+      "start": 597.059,
+      "end": 628.559,
+      "speaker": "speaker3",
+      "text": "你怎么回事啊"
+    },
+    {
+      "start": 628.559,
+      "end": 631.289,
+      "speaker": "speaker3",
+      "text": "你过来"
+    },
+    {
+      "start": 631.289,
+      "end": 636.7,
+      "speaker": "speaker3",
+      "text": "吴总没事吧"
+    },
+    {
+      "start": 636.7,
+      "end": 637.7,
+      "speaker": "speaker3",
+      "text": "行行行"
+    },
+    {
+      "start": 637.7,
+      "end": 638.7,
+      "speaker": "speaker3",
+      "text": "没事没事"
+    },
+    {
+      "start": 638.7,
+      "end": 639.7,
+      "speaker": "speaker3",
+      "text": "你安排那边吧"
+    },
+    {
+      "start": 639.7,
+      "end": 640.7,
+      "speaker": "speaker3",
+      "text": "阿维我没事"
+    },
+    {
+      "start": 640.7,
+      "end": 641.7,
+      "speaker": "TARGET",
+      "text": "你走吧"
+    },
+    {
+      "start": 641.7,
+      "end": 642.7,
+      "speaker": "TARGET",
+      "text": "没事你走了"
+    },
+    {
+      "start": 642.7,
+      "end": 643.7,
+      "speaker": "speaker3",
+      "text": "没事"
+    },
+    {
+      "start": 643.7,
+      "end": 647.1,
+      "speaker": "speaker3",
+      "text": "那我先走了"
+    },
+    {
+      "start": 647.1,
+      "end": 648.1,
+      "speaker": "speaker3",
+      "text": "你不是平时"
+    },
+    {
+      "start": 648.1,
+      "end": 649.1,
+      "speaker": "speaker3",
+      "text": "挺有功夫的吗"
+    },
+    {
+      "start": 652.509,
+      "end": 653.509,
+      "speaker": "TARGET",
+      "text": "今天发挥"
+    },
+    {
+      "start": 653.509,
+      "end": 654.509,
+      "speaker": "TARGET",
+      "text": "不不不太正"
+    },
+    {
+      "start": 655.509,
+      "end": 656.509,
+      "speaker": "speaker3",
+      "text": "你哪天发挥正常了"
+    },
+    {
+      "start": 657.509,
+      "end": 659.509,
+      "speaker": "speaker3",
+      "text": "你有发挥正常的时候吗"
+    },
+    {
+      "start": 660.509,
+      "end": 661.509,
+      "speaker": "speaker3",
+      "text": "我需要的是保镖"
+    },
+    {
+      "start": 661.509,
+      "end": 663.509,
+      "speaker": "speaker3",
+      "text": "不是需要挨打的"
+    },
+    {
+      "start": 663.509,
+      "end": 669.99,
+      "speaker": "TARGET",
+      "text": "这人太多了"
+    },
+    {
+      "start": 669.99,
+      "end": 670.99,
+      "speaker": "TARGET",
+      "text": "我挂不地重啊"
+    },
+    {
+      "start": 670.99,
+      "end": 672.99,
+      "speaker": "speaker3",
+      "text": "你平时不是老吹吹吗"
+    },
+    {
+      "start": 672.99,
+      "end": 674.99,
+      "speaker": "speaker3",
+      "text": "一个人能顶十个八个的"
+    },
+    {
+      "start": 674.99,
+      "end": 675.99,
+      "speaker": "speaker3",
+      "text": "今儿怎么了"
+    },
+    {
+      "start": 675.99,
+      "end": 677.99,
+      "speaker": "speaker3",
+      "text": "今儿四个就拿不下了"
+    },
+    {
+      "start": 677.99,
+      "end": 678.99,
+      "speaker": "speaker3",
+      "text": "不是"
+    },
+    {
+      "start": 678.99,
+      "end": 679.99,
+      "speaker": "TARGET",
+      "text": "我平时啊"
+    },
+    {
+      "start": 679.99,
+      "end": 680.99,
+      "speaker": "TARGET",
+      "text": "我只要一砸东西"
+    },
+    {
+      "start": 680.99,
+      "end": 681.99,
+      "speaker": "TARGET",
+      "text": "咔一砸"
+    },
+    {
+      "start": 681.99,
+      "end": 682.99,
+      "speaker": "TARGET",
+      "text": "咔咔咔"
+    },
+    {
+      "start": 682.99,
+      "end": 683.99,
+      "speaker": "TARGET",
+      "text": "脑里"
+    },
+    {
+      "start": 683.99,
+      "end": 684.99,
+      "speaker": "TARGET",
+      "text": "就基本震住了"
+    },
+    {
+      "start": 684.99,
+      "end": 686.99,
+      "speaker": "TARGET",
+      "text": "今天没人住"
+    },
+    {
+      "start": 686.99,
+      "end": 687.99,
+      "speaker": "TARGET",
+      "text": "以后"
+    },
+    {
+      "start": 687.99,
+      "end": 688.99,
+      "speaker": "TARGET",
+      "text": "以后你看看"
+    },
+    {
+      "start": 688.99,
+      "end": 689.99,
+      "speaker": "TARGET",
+      "text": "行了"
+    },
+    {
+      "start": 689.99,
+      "end": 690.99,
+      "speaker": "TARGET",
+      "text": "你也别说了好吧"
+    },
+    {
+      "start": 690.99,
+      "end": 691.99,
+      "speaker": "speaker3",
+      "text": "没以后了"
+    },
+    {
+      "start": 692.99,
+      "end": 693.99,
+      "speaker": "speaker3",
+      "text": "你还是干你老本行"
+    },
+    {
+      "start": 693.99,
+      "end": 694.99,
+      "speaker": "speaker3",
+      "text": "你回去炒菜吧"
+    },
+    {
+      "start": 694.99,
+      "end": 695.99,
+      "speaker": "speaker3",
+      "text": "别理吴总"
+    },
+    {
+      "start": 695.99,
+      "end": 696.99,
+      "speaker": "TARGET",
+      "text": "吴总"
+    },
+    {
+      "start": 696.99,
+      "end": 698.99,
+      "speaker": "TARGET",
+      "text": "你给我一次机会行不行"
+    },
+    {
+      "start": 699.99,
+      "end": 700.99,
+      "speaker": "TARGET",
+      "text": "你要再给我"
+    },
+    {
+      "start": 700.99,
+      "end": 701.99,
+      "speaker": "TARGET",
+      "text": "最后一次机会行不行"
+    },
+    {
+      "start": 703.99,
+      "end": 704.99,
+      "speaker": "TARGET",
+      "text": "吴总"
+    },
+    {
+      "start": 704.99,
+      "end": 708.58,
+      "speaker": "TARGET",
+      "text": "表哥洗洗吧"
+    },
+    {
+      "start": 708.58,
+      "end": 709.58,
+      "speaker": "TARGET",
+      "text": "我还不是洗洗"
+    },
+    {
+      "start": 709.58,
+      "end": 710.58,
+      "speaker": "TARGET",
+      "text": "你再洗洗"
+    },
+    {
+      "start": 710.58,
+      "end": 721.95,
+      "speaker": "speaker3",
+      "text": "先上屋里请"
+    },
+    {
+      "start": 722.95,
+      "end": 725.419,
+      "speaker": "speaker3",
+      "text": "表哥找你了"
+    },
+    {
+      "start": 725.419,
+      "end": 735.769,
+      "speaker": "speaker3",
+      "text": "没事吧表哥"
+    },
+    {
+      "start": 735.769,
+      "end": 738.429,
+      "speaker": "speaker3",
+      "text": "上医院呢"
+    },
+    {
+      "start": 738.429,
+      "end": 741.1,
+      "speaker": "speaker3",
+      "text": "我给你打个车了吧"
+    },
+    {
+      "start": 741.1,
+      "end": 742.1,
+      "speaker": "speaker3",
+      "text": "表哥"
+    },
+    {
+      "start": 745.1,
+      "end": 746.1,
+      "speaker": "TARGET",
+      "text": "打打得不成功"
+    },
+    {
+      "start": 747.1,
+      "end": 748.1,
+      "speaker": "TARGET",
+      "text": "没打"
+    },
+    {
+      "start": 748.1,
+      "end": 753.35,
+      "speaker": "TARGET",
+      "text": "慢走表哥"
+    },
+    {
+      "start": 753.35,
+      "end": 754.35,
+      "speaker": "speaker3",
+      "text": "慢走表哥"
+    },
+    {
+      "start": 754.35,
+      "end": 755.35,
+      "speaker": "speaker3",
+      "text": "表哥慢走"
+    },
+    {
+      "start": 755.35,
+      "end": 756.35,
+      "speaker": "speaker3",
+      "text": "再见"
+    },
+    {
+      "start": 757.35,
+      "end": 758.35,
+      "speaker": "speaker3",
+      "text": "你们干什么呢你们"
+    },
+    {
+      "start": 758.35,
+      "end": 759.35,
+      "speaker": "speaker3",
+      "text": "表哥打这样"
+    },
+    {
+      "start": 760.35,
+      "end": 761.35,
+      "speaker": "speaker3",
+      "text": "那腿打不上"
+    },
+    {
+      "start": 761.35,
+      "end": 762.35,
+      "speaker": "speaker3",
+      "text": "那腿打不完"
+    },
+    {
+      "start": 763.35,
+      "end": 764.35,
+      "speaker": "speaker3",
+      "text": "去老前宴打吗呀"
+    },
+    {
+      "start": 765.35,
+      "end": 766.35,
+      "speaker": "speaker3",
+      "text": "要管我去"
+    },
+    {
+      "start": 766.35,
+      "end": 767.35,
+      "speaker": "speaker3",
+      "text": "我肯定伸手"
+    },
+    {
+      "start": 767.35,
+      "end": 768.35,
+      "speaker": "speaker3",
+      "text": "你不行啊"
+    },
+    {
+      "start": 768.35,
+      "end": 769.35,
+      "speaker": "speaker3",
+      "text": "你去吧"
+    },
+    {
+      "start": 769.35,
+      "end": 770.35,
+      "speaker": "speaker3",
+      "text": "你去吧"
+    },
+    {
+      "start": 770.35,
+      "end": 771.35,
+      "speaker": "speaker3",
+      "text": "你打不完"
+    },
+    {
+      "start": 771.35,
+      "end": 834.82,
+      "speaker": "speaker3",
+      "text": "你找谁"
+    },
+    {
+      "start": 835.82,
+      "end": 836.82,
+      "speaker": "speaker3",
+      "text": "我找范德彪"
+    },
+    {
+      "start": 837.82,
+      "end": 838.82,
+      "speaker": "speaker3",
+      "text": "他是你什么人"
+    },
+    {
+      "start": 839.82,
+      "end": 840.82,
+      "speaker": "speaker3",
+      "text": "他是我老舅"
+    },
+    {
+      "start": 846.299,
+      "end": 847.299,
+      "speaker": "speaker3",
+      "text": "钱财"
+    },
+    {
+      "start": 847.299,
+      "end": 848.299,
+      "speaker": "speaker3",
+      "text": "吴总"
+    },
+    {
+      "start": 849.299,
+      "end": 852.299,
+      "speaker": "speaker3",
+      "text": "你跟那个保安部说一下"
+    },
+    {
+      "start": 852.299,
+      "end": 853.299,
+      "speaker": "speaker3",
+      "text": "对"
+    },
+    {
+      "start": 853.299,
+      "end": 854.299,
+      "speaker": "speaker3",
+      "text": "你让他过来送个人"
+    },
+    {
+      "start": 854.299,
+      "end": 859.62,
+      "speaker": "speaker3",
+      "text": "坐坐吧"
+    },
+    {
+      "start": 859.62,
+      "end": 863.019,
+      "speaker": "speaker3",
+      "text": "我求求你"
+    },
+    {
+      "start": 863.019,
+      "end": 865.019,
+      "speaker": "speaker3",
+      "text": "你跟我充个雨好行吗"
+    },
+    {
+      "start": 866.019,
+      "end": 867.019,
+      "speaker": "speaker3",
+      "text": "不可能的"
+    },
+    {
+      "start": 867.019,
+      "end": 868.019,
+      "speaker": "speaker3",
+      "text": "你怎么不明白呢"
+    },
+    {
+      "start": 868.019,
+      "end": 869.019,
+      "speaker": "speaker3",
+      "text": "玉芬"
+    },
+    {
+      "start": 869.019,
+      "end": 870.019,
+      "speaker": "speaker3",
+      "text": "你说我在里面待了三年"
+    },
+    {
+      "start": 870.019,
+      "end": 871.019,
+      "speaker": "speaker3",
+      "text": "我都想明白了"
+    },
+    {
+      "start": 871.019,
+      "end": 873.019,
+      "speaker": "speaker3",
+      "text": "往后我对你一定要好"
+    },
+    {
+      "start": 873.019,
+      "end": 874.019,
+      "speaker": "speaker3",
+      "text": "我一定"
+    },
+    {
+      "start": 874.019,
+      "end": 876.019,
+      "speaker": "speaker3",
+      "text": "我再也不碰你一下行不行"
+    },
+    {
+      "start": 876.019,
+      "end": 878.019,
+      "speaker": "speaker3",
+      "text": "咱俩早就离婚了"
+    },
+    {
+      "start": 878.019,
+      "end": 879.019,
+      "speaker": "speaker3",
+      "text": "咱俩已经没关系了"
+    },
+    {
+      "start": 879.019,
+      "end": 880.019,
+      "speaker": "speaker3",
+      "text": "我求求你"
+    },
+    {
+      "start": 880.019,
+      "end": 881.019,
+      "speaker": "speaker3",
+      "text": "咱俩有好的话"
+    },
+    {
+      "start": 881.019,
+      "end": 883.019,
+      "speaker": "speaker3",
+      "text": "往后我一下也不碰你行不行"
+    },
+    {
+      "start": 883.019,
+      "end": 884.019,
+      "speaker": "speaker3",
+      "text": "我对等启示"
+    },
+    {
+      "start": 884.019,
+      "end": 885.019,
+      "speaker": "speaker3",
+      "text": "我往后我再碰你一下"
+    },
+    {
+      "start": 885.019,
+      "end": 887.019,
+      "speaker": "speaker3",
+      "text": "我把手剁掉行不行"
+    },
+    {
+      "start": 887.019,
+      "end": 888.019,
+      "speaker": "speaker3",
+      "text": "我跟你说"
+    },
+    {
+      "start": 888.019,
+      "end": 889.019,
+      "speaker": "speaker3",
+      "text": "你就死了这条心肠"
+    },
+    {
+      "start": 889.019,
+      "end": 891.019,
+      "speaker": "speaker3",
+      "text": "我给监狱待了那几天"
+    },
+    {
+      "start": 891.019,
+      "end": 892.019,
+      "speaker": "speaker3",
+      "text": "那几年你给监狱"
+    },
+    {
+      "start": 892.019,
+      "end": 894.019,
+      "speaker": "speaker3",
+      "text": "你不也干一些见不得人的事"
+    },
+    {
+      "start": 894.019,
+      "end": 895.019,
+      "speaker": "speaker3",
+      "text": "你以为我不知道"
+    },
+    {
+      "start": 895.019,
+      "end": 896.019,
+      "speaker": "speaker3",
+      "text": "我干什么见不得人的事"
+    },
+    {
+      "start": 896.019,
+      "end": 897.019,
+      "speaker": "speaker3",
+      "text": "干啥呢"
+    },
+    {
+      "start": 897.019,
+      "end": 898.019,
+      "speaker": "speaker3",
+      "text": "没有事你上城里找那范德彪"
+    },
+    {
+      "start": 898.019,
+      "end": 899.019,
+      "speaker": "speaker3",
+      "text": "你干啥去了"
+    },
+    {
+      "start": 899.019,
+      "end": 900.019,
+      "speaker": "speaker3",
+      "text": "你俩能干什么好事"
+    },
+    {
+      "start": 900.019,
+      "end": 902.019,
+      "speaker": "speaker3",
+      "text": "我找范德彪跟你有什么关系"
+    },
+    {
+      "start": 903.019,
+      "end": 904.019,
+      "speaker": "speaker3",
+      "text": "我又不是你老婆了"
+    },
+    {
+      "start": 904.019,
+      "end": 906.019,
+      "speaker": "speaker3",
+      "text": "你到啥时候你都是我的女人"
+    },
+    {
+      "start": 907.019,
+      "end": 908.019,
+      "speaker": "speaker3",
+      "text": "我就不要你"
+    },
+    {
+      "start": 908.019,
+      "end": 909.019,
+      "speaker": "speaker3",
+      "text": "我就不和我姐夫婚"
+    },
+    {
+      "start": 909.019,
+      "end": 911.019,
+      "speaker": "speaker3",
+      "text": "我看哪个老爷们敢娶你"
+    },
+    {
+      "start": 911.019,
+      "end": 912.019,
+      "speaker": "speaker3",
+      "text": "你给我找了"
+    },
+    {
+      "start": 912.019,
+      "end": 913.019,
+      "speaker": "speaker3",
+      "text": "我看哪个爷们敢娶你"
+    },
+    {
+      "start": 913.019,
+      "end": 914.019,
+      "speaker": "speaker3",
+      "text": "你讲不讲点理"
+    },
+    {
+      "start": 914.019,
+      "end": 915.019,
+      "speaker": "speaker3",
+      "text": "我告诉你"
+    },
+    {
+      "start": 915.019,
+      "end": 916.019,
+      "speaker": "speaker3",
+      "text": "你到啥时候你都是我的"
+    },
+    {
+      "start": 916.019,
+      "end": 917.019,
+      "speaker": "speaker3",
+      "text": "谁也抢不走"
+    },
+    {
+      "start": 917.019,
+      "end": 918.019,
+      "speaker": "speaker3",
+      "text": "今天我就把你"
+    },
+    {
+      "start": 918.019,
+      "end": 919.019,
+      "speaker": "speaker3",
+      "text": "你干吗"
+    },
+    {
+      "start": 919.019,
+      "end": 920.019,
+      "speaker": "speaker3",
+      "text": "我给你办事不可"
+    },
+    {
+      "start": 920.019,
+      "end": 921.019,
+      "speaker": "speaker3",
+      "text": "你怎么耍流氓"
+    },
+    {
+      "start": 921.019,
+      "end": 922.019,
+      "speaker": "speaker3",
+      "text": "耍流氓"
+    },
+    {
+      "start": 922.019,
+      "end": 923.019,
+      "speaker": "speaker3",
+      "text": "我就流氓"
+    },
+    {
+      "start": 923.019,
+      "end": 924.019,
+      "speaker": "speaker3",
+      "text": "今天我就喝出来"
+    },
+    {
+      "start": 924.019,
+      "end": 925.019,
+      "speaker": "speaker3",
+      "text": "你还打地打地"
+    },
+    {
+      "start": 925.019,
+      "end": 926.019,
+      "speaker": "speaker3",
+      "text": "行你在那儿我喊人了"
+    },
+    {
+      "start": 926.019,
+      "end": 927.019,
+      "speaker": "speaker3",
+      "text": "你喊人"
+    },
+    {
+      "start": 927.019,
+      "end": 928.019,
+      "speaker": "speaker3",
+      "text": "你喊人我告诉你"
+    },
+    {
+      "start": 928.019,
+      "end": 929.019,
+      "speaker": "speaker3",
+      "text": "我喊了"
+    },
+    {
+      "start": 929.019,
+      "end": 930.019,
+      "speaker": "speaker3",
+      "text": "你喊我掐死你"
+    },
+    {
+      "start": 930.019,
+      "end": 931.019,
+      "speaker": "speaker3",
+      "text": "今天我就非你"
+    },
+    {
+      "start": 931.019,
+      "end": 932.019,
+      "speaker": "speaker3",
+      "text": "非你俩办事不行"
+    },
+    {
+      "start": 933.019,
+      "end": 934.019,
+      "speaker": "speaker3",
+      "text": "行行行"
+    },
+    {
+      "start": 934.019,
+      "end": 935.019,
+      "speaker": "speaker3",
+      "text": "你听我说"
+    },
+    {
+      "start": 935.019,
+      "end": 936.019,
+      "speaker": "speaker3",
+      "text": "怎么样"
+    },
+    {
+      "start": 936.019,
+      "end": 938.85,
+      "speaker": "speaker3",
+      "text": "你先听我说"
+    },
+    {
+      "start": 938.85,
+      "end": 939.85,
+      "speaker": "speaker3",
+      "text": "我真答应你"
+    },
+    {
+      "start": 939.85,
+      "end": 940.85,
+      "speaker": "speaker3",
+      "text": "你真答应我"
+    },
+    {
+      "start": 941.85,
+      "end": 942.85,
+      "speaker": "speaker3",
+      "text": "你听我说"
+    },
+    {
+      "start": 942.85,
+      "end": 944.85,
+      "speaker": "speaker3",
+      "text": "你先让我去洗洗脸行吗"
+    },
+    {
+      "start": 944.85,
+      "end": 945.85,
+      "speaker": "speaker3",
+      "text": "我去洗洗脸"
+    },
+    {
+      "start": 945.85,
+      "end": 946.85,
+      "speaker": "speaker3",
+      "text": "老婆你"
+    },
+    {
+      "start": 946.85,
+      "end": 947.85,
+      "speaker": "speaker3",
+      "text": "我真谢谢你"
+    },
+    {
+      "start": 947.85,
+      "end": 948.85,
+      "speaker": "speaker3",
+      "text": "你快点快点"
+    },
+    {
+      "start": 948.85,
+      "end": 949.85,
+      "speaker": "speaker3",
+      "text": "经过我去"
+    },
+    {
+      "start": 949.85,
+      "end": 950.85,
+      "speaker": "speaker3",
+      "text": "行行行"
+    },
+    {
+      "start": 950.85,
+      "end": 951.85,
+      "speaker": "speaker3",
+      "text": "我先洗洗去"
+    },
+    {
+      "start": 951.85,
+      "end": 952.85,
+      "speaker": "speaker3",
+      "text": "你在这儿等我"
+    },
+    {
+      "start": 952.85,
+      "end": 977.299,
+      "speaker": "speaker2",
+      "text": "你快点回来"
+    },
+    {
+      "start": 977.299,
+      "end": 978.299,
+      "speaker": "speaker2",
+      "text": "出啥事了"
+    },
+    {
+      "start": 978.299,
+      "end": 983.11,
+      "speaker": "speaker3",
+      "text": "尤二回来了"
+    },
+    {
+      "start": 983.11,
+      "end": 984.11,
+      "speaker": "speaker2",
+      "text": "你快走"
+    },
+    {
+      "start": 984.11,
+      "end": 985.11,
+      "speaker": "speaker3",
+      "text": "谁"
+    },
+    {
+      "start": 985.11,
+      "end": 986.11,
+      "speaker": "speaker3",
+      "text": "尤二"
+    },
+    {
+      "start": 986.11,
+      "end": 987.11,
+      "speaker": "speaker3",
+      "text": "没事他找你呢"
+    },
+    {
+      "start": 987.11,
+      "end": 988.11,
+      "speaker": "speaker2",
+      "text": "谁呀谁来了"
+    },
+    {
+      "start": 988.11,
+      "end": 989.11,
+      "speaker": "speaker3",
+      "text": "尤二回来了"
+    },
+    {
+      "start": 989.11,
+      "end": 990.11,
+      "speaker": "speaker3",
+      "text": "姓马哥嘛"
+    },
+    {
+      "start": 990.11,
+      "end": 991.11,
+      "speaker": "speaker3",
+      "text": "回来了"
+    },
+    {
+      "start": 991.11,
+      "end": 992.11,
+      "speaker": "speaker3",
+      "text": "挺好的是吧"
+    },
+    {
+      "start": 992.11,
+      "end": 993.11,
+      "speaker": "speaker3",
+      "text": "好啥呀"
+    },
+    {
+      "start": 993.11,
+      "end": 996.87,
+      "speaker": "speaker3",
+      "text": "跟那里待著能好吗"
+    },
+    {
+      "start": 996.87,
+      "end": 998.87,
+      "speaker": "speaker3",
+      "text": "我这不和你回来"
+    },
+    {
+      "start": 998.87,
+      "end": 1000.87,
+      "speaker": "speaker3",
+      "text": "跟他复婚得了"
+    },
+    {
+      "start": 1000.87,
+      "end": 1001.87,
+      "speaker": "speaker3",
+      "text": "谁跟你复婚"
+    },
+    {
+      "start": 1001.87,
+      "end": 1002.87,
+      "speaker": "speaker3",
+      "text": "你给我走"
+    },
+    {
+      "start": 1002.87,
+      "end": 1003.87,
+      "speaker": "speaker3",
+      "text": "你先给我出去"
+    },
+    {
+      "start": 1003.87,
+      "end": 1004.87,
+      "speaker": "speaker2",
+      "text": "听见没"
+    },
+    {
+      "start": 1004.87,
+      "end": 1005.87,
+      "speaker": "speaker2",
+      "text": "听马哥跟你说一下"
+    },
+    {
+      "start": 1005.87,
+      "end": 1006.87,
+      "speaker": "speaker2",
+      "text": "你"
+    },
+    {
+      "start": 1006.87,
+      "end": 1007.87,
+      "speaker": "speaker2",
+      "text": "这年来"
+    },
+    {
+      "start": 1007.87,
+      "end": 1008.87,
+      "speaker": "speaker2",
+      "text": "两口子"
+    },
+    {
+      "start": 1008.87,
+      "end": 1009.87,
+      "speaker": "speaker2",
+      "text": "啥事好好闹了"
+    },
+    {
+      "start": 1009.87,
+      "end": 1010.87,
+      "speaker": "speaker2",
+      "text": "别"
+    },
+    {
+      "start": 1010.87,
+      "end": 1011.87,
+      "speaker": "speaker2",
+      "text": "别往心里去"
+    },
+    {
+      "start": 1011.87,
+      "end": 1012.87,
+      "speaker": "speaker2",
+      "text": "因为"
+    },
+    {
+      "start": 1012.87,
+      "end": 1014.87,
+      "speaker": "speaker2",
+      "text": "尤二这个人挺好"
+    },
+    {
+      "start": 1014.87,
+      "end": 1015.87,
+      "speaker": "speaker3",
+      "text": "马哥说著话"
+    },
+    {
+      "start": 1015.87,
+      "end": 1016.87,
+      "speaker": "speaker3",
+      "text": "才能明白人家"
+    },
+    {
+      "start": 1016.87,
+      "end": 1017.87,
+      "speaker": "speaker3",
+      "text": "你咋子复婚了"
+    },
+    {
+      "start": 1017.87,
+      "end": 1018.87,
+      "speaker": "speaker3",
+      "text": "我对你能好"
+    },
+    {
+      "start": 1018.87,
+      "end": 1019.87,
+      "speaker": "speaker3",
+      "text": "我又改好了"
+    },
+    {
+      "start": 1019.87,
+      "end": 1020.87,
+      "speaker": "speaker3",
+      "text": "得了吧"
+    },
+    {
+      "start": 1020.87,
+      "end": 1021.87,
+      "speaker": "speaker3",
+      "text": "你给我出去"
+    },
+    {
+      "start": 1021.87,
+      "end": 1022.87,
+      "speaker": "speaker3",
+      "text": "你听见没"
+    },
+    {
+      "start": 1022.87,
+      "end": 1023.87,
+      "speaker": "speaker3",
+      "text": "要不我找派出所了"
+    },
+    {
+      "start": 1023.87,
+      "end": 1024.869,
+      "speaker": "speaker3",
+      "text": "你给我出去"
+    },
+    {
+      "start": 1024.869,
+      "end": 1025.869,
+      "speaker": "speaker3",
+      "text": "先给我出去"
+    },
+    {
+      "start": 1025.869,
+      "end": 1027.869,
+      "speaker": "speaker3",
+      "text": "你别说派出所派出所"
+    },
+    {
+      "start": 1027.869,
+      "end": 1028.869,
+      "speaker": "speaker3",
+      "text": "我啥我没见到啊"
+    },
+    {
+      "start": 1028.869,
+      "end": 1029.869,
+      "speaker": "speaker3",
+      "text": "出去出去吧"
+    },
+    {
+      "start": 1029.869,
+      "end": 1034.869,
+      "speaker": "speaker2",
+      "text": "我走"
+    },
+    {
+      "start": 1034.869,
+      "end": 1039.46,
+      "speaker": "speaker2",
+      "text": "咋地了"
+    },
+    {
+      "start": 1039.46,
+      "end": 1041.46,
+      "speaker": "speaker2",
+      "text": "过去的事就拉倒了"
+    },
+    {
+      "start": 1041.46,
+      "end": 1042.46,
+      "speaker": "speaker2",
+      "text": "是不是"
+    },
+    {
+      "start": 1042.46,
+      "end": 1043.46,
+      "speaker": "speaker2",
+      "text": "尤二这个人家"
+    },
+    {
+      "start": 1043.46,
+      "end": 1044.46,
+      "speaker": "speaker2",
+      "text": "是有点毛病"
+    },
+    {
+      "start": 1044.46,
+      "end": 1045.46,
+      "speaker": "speaker2",
+      "text": "到三年了"
+    },
+    {
+      "start": 1045.46,
+      "end": 1046.46,
+      "speaker": "speaker2",
+      "text": "回来之后呢"
+    },
+    {
+      "start": 1046.46,
+      "end": 1048.46,
+      "speaker": "speaker2",
+      "text": "啥事就尽量往开谈"
+    },
+    {
+      "start": 1048.46,
+      "end": 1051.46,
+      "speaker": "speaker2",
+      "text": "谈谈谈谈谈就好了"
+    },
+    {
+      "start": 1051.46,
+      "end": 1053.46,
+      "speaker": "speaker2",
+      "text": "二人的脾气"
+    },
+    {
+      "start": 1053.46,
+      "end": 1054.46,
+      "speaker": "speaker2",
+      "text": "我讲"
+    },
+    {
+      "start": 1054.46,
+      "end": 1055.46,
+      "speaker": "speaker3",
+      "text": "我跟你说啊"
+    },
+    {
+      "start": 1055.46,
+      "end": 1056.46,
+      "speaker": "speaker3",
+      "text": "马哥"
+    },
+    {
+      "start": 1056.46,
+      "end": 1058.46,
+      "speaker": "speaker3",
+      "text": "你也知道我什么人"
+    },
+    {
+      "start": 1058.46,
+      "end": 1060.46,
+      "speaker": "speaker3",
+      "text": "我碰过的娘们"
+    },
+    {
+      "start": 1060.46,
+      "end": 1061.46,
+      "speaker": "speaker3",
+      "text": "我就不信"
+    },
+    {
+      "start": 1061.46,
+      "end": 1062.46,
+      "speaker": "speaker3",
+      "text": "我又何以别人老爷们"
+    },
+    {
+      "start": 1062.46,
+      "end": 1063.46,
+      "speaker": "speaker3",
+      "text": "敢碰呢"
+    },
+    {
+      "start": 1063.46,
+      "end": 1064.46,
+      "speaker": "speaker2",
+      "text": "那谁又敢"
+    },
+    {
+      "start": 1064.46,
+      "end": 1065.46,
+      "speaker": "speaker3",
+      "text": "谁敢碰我生死"
+    },
+    {
+      "start": 1065.46,
+      "end": 1070.41,
+      "speaker": "speaker2",
+      "text": "二啥事你得消消火的事"
+    },
+    {
+      "start": 1070.41,
+      "end": 1071.41,
+      "speaker": "speaker2",
+      "text": "就这个事"
+    },
+    {
+      "start": 1071.41,
+      "end": 1075.16,
+      "speaker": "speaker2",
+      "text": "赶快找地了"
+    },
+    {
+      "start": 1075.16,
+      "end": 1080.329,
+      "speaker": "speaker3",
+      "text": "屋里坐吧"
+    },
+    {
+      "start": 1080.329,
+      "end": 1081.329,
+      "speaker": "speaker3",
+      "text": "先屋里坐吧"
+    },
+    {
+      "start": 1081.329,
+      "end": 1086.359,
+      "speaker": "speaker2",
+      "text": "背后"
+    },
+    {
+      "start": 1086.359,
+      "end": 1093.25,
+      "speaker": "speaker3",
+      "text": "别哭了"
+    },
+    {
+      "start": 1093.25,
+      "end": 1094.25,
+      "speaker": "speaker2",
+      "text": "他动手了咋的"
+    },
+    {
+      "start": 1094.25,
+      "end": 1096.25,
+      "speaker": "speaker3",
+      "text": "别提那混蛋"
+    },
+    {
+      "start": 1096.25,
+      "end": 1097.25,
+      "speaker": "speaker2",
+      "text": "他是不是耍流氓了"
+    },
+    {
+      "start": 1097.25,
+      "end": 1102.9,
+      "speaker": "speaker2",
+      "text": "这种情况你就赶紧躲著"
+    },
+    {
+      "start": 1102.9,
+      "end": 1104.9,
+      "speaker": "speaker2",
+      "text": "你不能吃哑巴昆"
+    },
+    {
+      "start": 1104.9,
+      "end": 1105.9,
+      "speaker": "speaker3",
+      "text": "他下次要再来啊"
+    },
+    {
+      "start": 1105.9,
+      "end": 1107.9,
+      "speaker": "speaker3",
+      "text": "我就去派出所去"
+    },
+    {
+      "start": 1107.9,
+      "end": 1111.18,
+      "speaker": "speaker2",
+      "text": "他肯定害得我哭"
+    },
+    {
+      "start": 1111.18,
+      "end": 1116.15,
+      "speaker": "speaker2",
+      "text": "听我来我跟你说的事"
+    },
+    {
+      "start": 1116.15,
+      "end": 1117.15,
+      "speaker": "speaker2",
+      "text": "我得进城了"
+    },
+    {
+      "start": 1117.15,
+      "end": 1119.15,
+      "speaker": "speaker3",
+      "text": "进城了"
+    },
+    {
+      "start": 1119.15,
+      "end": 1121.15,
+      "speaker": "speaker2",
+      "text": "就是结婚"
+    },
+    {
+      "start": 1121.15,
+      "end": 1122.15,
+      "speaker": "speaker2",
+      "text": "对"
+    },
+    {
+      "start": 1122.15,
+      "end": 1124.15,
+      "speaker": "speaker3",
+      "text": "结结婚我还没去呢"
+    },
+    {
+      "start": 1124.15,
+      "end": 1125.15,
+      "speaker": "speaker2",
+      "text": "去啥呢"
+    },
+    {
+      "start": 1125.15,
+      "end": 1127.15,
+      "speaker": "speaker2",
+      "text": "这头一切都准备好了"
+    },
+    {
+      "start": 1127.15,
+      "end": 1128.15,
+      "speaker": "speaker2",
+      "text": "我也不知道"
+    },
+    {
+      "start": 1128.15,
+      "end": 1129.15,
+      "speaker": "speaker2",
+      "text": "到家接人"
+    },
+    {
+      "start": 1129.15,
+      "end": 1130.15,
+      "speaker": "speaker2",
+      "text": "人没了"
+    },
+    {
+      "start": 1130.15,
+      "end": 1131.15,
+      "speaker": "speaker3",
+      "text": "跑了"
+    },
+    {
+      "start": 1131.15,
+      "end": 1133.529,
+      "speaker": "speaker3",
+      "text": "可能上他旧东西了"
+    },
+    {
+      "start": 1133.529,
+      "end": 1135.529,
+      "speaker": "speaker2",
+      "text": "进城了"
+    },
+    {
+      "start": 1135.529,
+      "end": 1137.529,
+      "speaker": "speaker2",
+      "text": "影响老婆好了"
+    },
+    {
+      "start": 1137.529,
+      "end": 1138.529,
+      "speaker": "speaker2",
+      "text": "各村村长也来了"
+    },
+    {
+      "start": 1138.529,
+      "end": 1139.529,
+      "speaker": "speaker2",
+      "text": "都给他等作息"
+    },
+    {
+      "start": 1139.529,
+      "end": 1141.529,
+      "speaker": "speaker2",
+      "text": "那刚才让村长跟我骂完了"
+    },
+    {
+      "start": 1141.529,
+      "end": 1142.529,
+      "speaker": "speaker2",
+      "text": "一早的去吧"
+    },
+    {
+      "start": 1142.529,
+      "end": 1146.339,
+      "speaker": "speaker3",
+      "text": "要不咋整的"
+    },
+    {
+      "start": 1146.339,
+      "end": 1148.339,
+      "speaker": "speaker2",
+      "text": "老丢人了"
+    },
+    {
+      "start": 1148.339,
+      "end": 1151.339,
+      "speaker": "speaker2",
+      "text": "现在等作息的根本不知道呢"
+    },
+    {
+      "start": 1151.339,
+      "end": 1154.619,
+      "speaker": "speaker2",
+      "text": "所以我先进城了"
+    },
+    {
+      "start": 1154.619,
+      "end": 1158.38,
+      "speaker": "speaker3",
+      "text": "你这是干啥"
+    },
+    {
+      "start": 1158.38,
+      "end": 1160.38,
+      "speaker": "speaker2",
+      "text": "我赶紧进城了"
+    },
+    {
+      "start": 1160.38,
+      "end": 1161.38,
+      "speaker": "speaker2",
+      "text": "够用"
+    },
+    {
+      "start": 1161.38,
+      "end": 1162.38,
+      "speaker": "speaker3",
+      "text": "我不用钱"
+    },
+    {
+      "start": 1162.38,
+      "end": 1163.38,
+      "speaker": "speaker2",
+      "text": "你拿花吧"
+    },
+    {
+      "start": 1163.38,
+      "end": 1164.38,
+      "speaker": "speaker2",
+      "text": "实在不行"
+    },
+    {
+      "start": 1164.38,
+      "end": 1165.38,
+      "speaker": "speaker2",
+      "text": "你赶紧回娘家去"
+    },
+    {
+      "start": 1165.38,
+      "end": 1166.38,
+      "speaker": "speaker2",
+      "text": "来了之后又回家"
+    },
+    {
+      "start": 1166.38,
+      "end": 1167.38,
+      "speaker": "speaker2",
+      "text": "找你妈去"
+    },
+    {
+      "start": 1167.38,
+      "end": 1168.38,
+      "speaker": "speaker2",
+      "text": "行呀"
+    },
+    {
+      "start": 1168.38,
+      "end": 1169.38,
+      "speaker": "speaker2",
+      "text": "我过两天就回来了"
+    },
+    {
+      "start": 1169.38,
+      "end": 1171.38,
+      "speaker": "speaker3",
+      "text": "你就别担心我了"
+    },
+    {
+      "start": 1171.38,
+      "end": 1172.38,
+      "speaker": "speaker3",
+      "text": "你说生意还得用"
+    },
+    {
+      "start": 1172.38,
+      "end": 1173.38,
+      "speaker": "speaker2",
+      "text": "你拿著"
+    },
+    {
+      "start": 1173.38,
+      "end": 1174.38,
+      "speaker": "speaker2",
+      "text": "你带著"
+    },
+    {
+      "start": 1174.38,
+      "end": 1175.38,
+      "speaker": "speaker2",
+      "text": "有吃的啥呀"
+    },
+    {
+      "start": 1175.38,
+      "end": 1179.779,
+      "speaker": "speaker2",
+      "text": "你说这事能赶紧起一起来"
+    },
+    {
+      "start": 1179.779,
+      "end": 1181.779,
+      "speaker": "speaker2",
+      "text": "我先赶紧将孩子结婚婚"
+    },
+    {
+      "start": 1181.779,
+      "end": 1183.779,
+      "speaker": "speaker2",
+      "text": "咱俩的事也得有个结果"
+    },
+    {
+      "start": 1183.779,
+      "end": 1190.069,
+      "speaker": "speaker2",
+      "text": "我走了行吗"
+    },
+    {
+      "start": 1190.069,
+      "end": 1191.069,
+      "speaker": "speaker3",
+      "text": "你注意点啊"
+    },
+    {
+      "start": 1191.069,
+      "end": 1194.069,
+      "speaker": "speaker2",
+      "text": "我没事你"
+    },
+    {
+      "start": 1194.069,
+      "end": 1196.069,
+      "speaker": "speaker2",
+      "text": "你别个家了"
+    },
+    {
+      "start": 1196.069,
+      "end": 1197.069,
+      "speaker": "speaker2",
+      "text": "别人把门锁上"
+    },
+    {
+      "start": 1197.069,
+      "end": 1198.069,
+      "speaker": "speaker2",
+      "text": "行不"
+    },
+    {
+      "start": 1198.069,
+      "end": 1200.069,
+      "speaker": "speaker2",
+      "text": "他指定还得来"
+    },
+    {
+      "start": 1200.069,
+      "end": 1202.7,
+      "speaker": "speaker2",
+      "text": "我赶紧去"
+    },
+    {
+      "start": 1202.7,
+      "end": 1256.5,
+      "speaker": "speaker3",
+      "text": "下来"
+    },
+    {
+      "start": 1256.5,
+      "end": 1260.38,
+      "speaker": "TARGET",
+      "text": "找你呢"
+    },
+    {
+      "start": 1260.38,
+      "end": 1268.91,
+      "speaker": "TARGET",
+      "text": "你谁呀"
+    },
+    {
+      "start": 1268.91,
+      "end": 1270.91,
+      "speaker": "speaker3",
+      "text": "我找我老舅"
+    },
+    {
+      "start": 1270.91,
+      "end": 1271.91,
+      "speaker": "TARGET",
+      "text": "老舅谁呀"
+    },
+    {
+      "start": 1271.91,
+      "end": 1273.91,
+      "speaker": "speaker3",
+      "text": "我老舅饭都不要"
+    },
+    {
+      "start": 1273.91,
+      "end": 1274.91,
+      "speaker": "speaker3",
+      "text": "你"
+    },
+    {
+      "start": 1274.91,
+      "end": 1276.91,
+      "speaker": "TARGET",
+      "text": "你带啥人呢"
+    },
+    {
+      "start": 1276.91,
+      "end": 1278.91,
+      "speaker": "speaker3",
+      "text": "我是小翠儿"
+    },
+    {
+      "start": 1278.91,
+      "end": 1280.91,
+      "speaker": "TARGET",
+      "text": "小翠儿"
+    },
+    {
+      "start": 1280.91,
+      "end": 1282.91,
+      "speaker": "TARGET",
+      "text": "你小翠儿"
+    },
+    {
+      "start": 1282.91,
+      "end": 1283.91,
+      "speaker": "speaker3",
+      "text": "老舅"
+    },
+    {
+      "start": 1283.91,
+      "end": 1284.91,
+      "speaker": "speaker3",
+      "text": "老舅"
+    },
+    {
+      "start": 1284.91,
+      "end": 1286.91,
+      "speaker": "speaker3",
+      "text": "妈长 长这么高了"
+    },
+    {
+      "start": 1286.91,
+      "end": 1287.91,
+      "speaker": "TARGET",
+      "text": "嗯"
+    },
+    {
+      "start": 1287.91,
+      "end": 1288.91,
+      "speaker": "TARGET",
+      "text": "哎呀"
+    },
+    {
+      "start": 1288.91,
+      "end": 1295.9,
+      "speaker": "speaker3",
+      "text": "腰哥"
+    },
+    {
+      "start": 1295.9,
+      "end": 1296.9,
+      "speaker": "TARGET",
+      "text": "告辞了"
+    },
+    {
+      "start": 1296.9,
+      "end": 1298.9,
+      "speaker": "speaker3",
+      "text": "你打架了"
+    },
+    {
+      "start": 1298.9,
+      "end": 1299.9,
+      "speaker": "speaker3",
+      "text": "没没"
+    },
+    {
+      "start": 1299.9,
+      "end": 1300.9,
+      "speaker": "TARGET",
+      "text": "借 借一下"
+    },
+    {
+      "start": 1300.9,
+      "end": 1301.9,
+      "speaker": "TARGET",
+      "text": "借一下"
+    },
+    {
+      "start": 1301.9,
+      "end": 1302.9,
+      "speaker": "TARGET",
+      "text": "我边跪著你"
+    },
+    {
+      "start": 1302.9,
+      "end": 1304.9,
+      "speaker": "TARGET",
+      "text": "你咋来了呢"
+    },
+    {
+      "start": 1304.9,
+      "end": 1306.9,
+      "speaker": "speaker3",
+      "text": "突出点事"
+    },
+    {
+      "start": 1306.9,
+      "end": 1307.9,
+      "speaker": "TARGET",
+      "text": "出啥事呢"
+    },
+    {
+      "start": 1307.9,
+      "end": 1317.38,
+      "speaker": "TARGET",
+      "text": "你爸也没了"
+    },
+    {
+      "start": 1317.38,
+      "end": 1322.019,
+      "speaker": "speaker3",
+      "text": "就长得像茄子包那样"
+    },
+    {
+      "start": 1322.019,
+      "end": 1324.019,
+      "speaker": "TARGET",
+      "text": "现在没长开来吗"
+    },
+    {
+      "start": 1324.019,
+      "end": 1328.519,
+      "speaker": "speaker3",
+      "text": "就 就 就 就"
+    },
+    {
+      "start": 1328.519,
+      "end": 1330.519,
+      "speaker": "TARGET",
+      "text": "正在勾我一头了"
+    },
+    {
+      "start": 1330.519,
+      "end": 1373.539,
+      "speaker": "speaker3",
+      "text": "正在炸著这个"
+    },
+    {
+      "start": 1373.539,
+      "end": 1375.539,
+      "speaker": "speaker3",
+      "text": "你爸说要来吗"
+    },
+    {
+      "start": 1375.539,
+      "end": 1377.539,
+      "speaker": "speaker3",
+      "text": "我爸肯定得来找你"
+    },
+    {
+      "start": 1377.539,
+      "end": 1379.539,
+      "speaker": "speaker3",
+      "text": "肯定得把我带回去"
+    },
+    {
+      "start": 1379.539,
+      "end": 1380.539,
+      "speaker": "speaker3",
+      "text": "你咋的"
+    },
+    {
+      "start": 1380.539,
+      "end": 1382.539,
+      "speaker": "TARGET",
+      "text": "就不想回去了呗"
+    },
+    {
+      "start": 1382.539,
+      "end": 1383.799,
+      "speaker": "TARGET",
+      "text": "不想回去了"
+    },
+    {
+      "start": 1384.539,
+      "end": 1389.44,
+      "speaker": "speaker3",
+      "text": "老舅你帮我在城里找个工作"
+    },
+    {
+      "start": 1389.44,
+      "end": 1392.519,
+      "speaker": "TARGET",
+      "text": "来来的不是时候"
+    },
+    {
+      "start": 1392.519,
+      "end": 1394.839,
+      "speaker": "speaker3",
+      "text": "咋的了老舅"
+    },
+    {
+      "start": 1394.839,
+      "end": 1395.68,
+      "speaker": "TARGET",
+      "text": "没事"
+    },
+    {
+      "start": 1395.68,
+      "end": 1398.72,
+      "speaker": "TARGET",
+      "text": "工作不难找"
+    },
+    {
+      "start": 1398.72,
+      "end": 1400.759,
+      "speaker": "speaker3",
+      "text": "老舅你真能帮我找个工作"
+    },
+    {
+      "start": 1400.759,
+      "end": 1402.64,
+      "speaker": "TARGET",
+      "text": "哎呀那算啥呀"
+    },
+    {
+      "start": 1402.64,
+      "end": 1404.839,
+      "speaker": "TARGET",
+      "text": "老舅在城里混七百年了"
+    },
+    {
+      "start": 1404.839,
+      "end": 1407.319,
+      "speaker": "TARGET",
+      "text": "找工作那不熟那把家吗"
+    },
+    {
+      "start": 1407.319,
+      "end": 1408.559,
+      "speaker": "TARGET",
+      "text": "饿了吧"
+    },
+    {
+      "start": 1408.559,
+      "end": 1410.44,
+      "speaker": "TARGET",
+      "text": "先吃饭吧"
+    },
+    {
+      "start": 1410.44,
+      "end": 1412.88,
+      "speaker": "TARGET",
+      "text": "晚晚再熟会儿"
+    },
+    {
+      "start": 1412.88,
+      "end": 1414.2,
+      "speaker": "TARGET",
+      "text": "好"
+    },
+    {
+      "start": 1414.2,
+      "end": 1556.89,
+      "speaker": "TARGET",
+      "text": "我托你一个"
+    },
+    {
+      "start": 1556.89,
+      "end": 1558.17,
+      "speaker": "speaker3",
+      "text": "干干点啥呗"
+    },
+    {
+      "start": 1558.17,
+      "end": 1564.91,
+      "speaker": "speaker3",
+      "text": "老表你知道我这也不缺服务员呢"
+    },
+    {
+      "start": 1564.91,
+      "end": 1567.069,
+      "speaker": "speaker2",
+      "text": "那那算了"
+    },
+    {
+      "start": 1567.069,
+      "end": 1568.39,
+      "speaker": "speaker3",
+      "text": "没事"
+    },
+    {
+      "start": 1568.39,
+      "end": 1569.47,
+      "speaker": "speaker3",
+      "text": "那你让他过来呗"
+    },
+    {
+      "start": 1569.47,
+      "end": 1571.829,
+      "speaker": "speaker3",
+      "text": "不差他你一个人"
+    },
+    {
+      "start": 1571.829,
+      "end": 1573.589,
+      "speaker": "TARGET",
+      "text": "不是我不是"
+    },
+    {
+      "start": 1573.589,
+      "end": 1575.39,
+      "speaker": "TARGET",
+      "text": "我是看你这挺忙活的"
+    },
+    {
+      "start": 1575.39,
+      "end": 1578.269,
+      "speaker": "TARGET",
+      "text": "让他过来帮你忙活忙活"
+    },
+    {
+      "start": 1578.269,
+      "end": 1580.109,
+      "speaker": "TARGET",
+      "text": "工作那不有的事吗"
+    },
+    {
+      "start": 1580.109,
+      "end": 1580.829,
+      "speaker": "TARGET",
+      "text": "行行"
+    },
+    {
+      "start": 1580.829,
+      "end": 1587.99,
+      "speaker": "TARGET",
+      "text": "吃吃吃算了"
+    },
+    {
+      "start": 1587.99,
+      "end": 1605.99,
+      "speaker": "TARGET",
+      "text": "这这这占价了"
+    },
+    {
+      "start": 1605.99,
+      "end": 1607.23,
+      "speaker": "speaker3",
+      "text": "一般写的时尚"
+    },
+    {
+      "start": 1607.23,
+      "end": 1628.14,
+      "speaker": "speaker3",
+      "text": "给安排什么"
+    },
+    {
+      "start": 1628.14,
+      "end": 1629.46,
+      "speaker": "TARGET",
+      "text": "哎呀"
+    },
+    {
+      "start": 1629.46,
+      "end": 1631.299,
+      "speaker": "TARGET",
+      "text": "吴总啊"
+    },
+    {
+      "start": 1631.299,
+      "end": 1631.619,
+      "speaker": "TARGET",
+      "text": "哎"
+    },
+    {
+      "start": 1631.619,
+      "end": 1633.94,
+      "speaker": "TARGET",
+      "text": "哎我我我马上过去啊"
+    },
+    {
+      "start": 1633.94,
+      "end": 1635.019,
+      "speaker": "TARGET",
+      "text": "哎好嘞好嘞好嘞"
+    },
+    {
+      "start": 1635.019,
+      "end": 1636.14,
+      "speaker": "TARGET",
+      "text": "哎哎"
+    },
+    {
+      "start": 1636.14,
+      "end": 1636.9,
+      "speaker": "TARGET",
+      "text": "村儿你先歇会儿"
+    },
+    {
+      "start": 1636.9,
+      "end": 1663.42,
+      "speaker": "speaker3",
+      "text": "我我办点急事啊"
+    },
+    {
+      "start": 1663.42,
+      "end": 1664.46,
+      "speaker": "speaker3",
+      "text": "下车吧"
+    },
+    {
+      "start": 1664.46,
+      "end": 1666.019,
+      "speaker": "speaker3",
+      "text": "把包拿好啊"
+    },
+    {
+      "start": 1666.019,
+      "end": 1667.299,
+      "speaker": "speaker3",
+      "text": "准备够了"
+    },
+    {
+      "start": 1667.299,
+      "end": 1672.349,
+      "speaker": "speaker3",
+      "text": "有这有这"
+    },
+    {
+      "start": 1672.349,
+      "end": 1688.97,
+      "speaker": "speaker3",
+      "text": "这是什么价呢"
+    },
+    {
+      "start": 1688.97,
+      "end": 1704.779,
+      "speaker": "speaker2",
+      "text": "成交"
+    },
+    {
+      "start": 1704.779,
+      "end": 1705.619,
+      "speaker": "speaker3",
+      "text": "我下早了"
+    },
+    {
+      "start": 1705.619,
+      "end": 1709.38,
+      "speaker": "speaker3",
+      "text": "我买票了"
+    },
+    {
+      "start": 1709.38,
+      "end": 1713.97,
+      "speaker": "speaker3",
+      "text": "我买票了"
+    },
+    {
+      "start": 1713.97,
+      "end": 1715.769,
+      "speaker": "speaker3",
+      "text": "没票能"
+    },
+    {
+      "start": 1715.769,
+      "end": 1716.769,
+      "speaker": "speaker3",
+      "text": "没票呢"
+    },
+    {
+      "start": 1716.769,
+      "end": 1718.569,
+      "speaker": "speaker3",
+      "text": "赶快把票买了"
+    },
+    {
+      "start": 1718.569,
+      "end": 1720.009,
+      "speaker": "speaker2",
+      "text": "没票能坐出了吗"
+    },
+    {
+      "start": 1720.009,
+      "end": 1730.9,
+      "speaker": "speaker2",
+      "text": "那我钱包呢"
+    },
+    {
+      "start": 1730.9,
+      "end": 1733.65,
+      "speaker": "speaker2",
+      "text": "我钱包溜了"
+    },
+    {
+      "start": 1733.65,
+      "end": 1736.619,
+      "speaker": "speaker2",
+      "text": "我钱包溜了"
+    },
+    {
+      "start": 1736.619,
+      "end": 1737.94,
+      "speaker": "speaker2",
+      "text": "他刚才"
+    },
+    {
+      "start": 1737.94,
+      "end": 1739.22,
+      "speaker": "speaker2",
+      "text": "我坐这儿的时候啊"
+    },
+    {
+      "start": 1739.22,
+      "end": 1749.019,
+      "speaker": "speaker2",
+      "text": "他从这儿没停下来"
+    },
+    {
+      "start": 1749.019,
+      "end": 1749.94,
+      "speaker": "speaker3",
+      "text": "哎师傅"
+    },
+    {
+      "start": 1749.94,
+      "end": 1751.619,
+      "speaker": "speaker3",
+      "text": "师傅你停一下吧"
+    },
+    {
+      "start": 1751.619,
+      "end": 1752.46,
+      "speaker": "speaker3",
+      "text": "来停一下"
+    },
+    {
+      "start": 1752.46,
+      "end": 1753.579,
+      "speaker": "speaker3",
+      "text": "这这这这车能停吗"
+    },
+    {
+      "start": 1753.579,
+      "end": 1754.859,
+      "speaker": "speaker3",
+      "text": "不是我那这个"
+    },
+    {
+      "start": 1754.859,
+      "end": 1756.7,
+      "speaker": "speaker3",
+      "text": "跟我旁边坐的那个墙头是吧"
+    },
+    {
+      "start": 1756.7,
+      "end": 1757.259,
+      "speaker": "speaker3",
+      "text": "那个"
+    },
+    {
+      "start": 1757.259,
+      "end": 1758.099,
+      "speaker": "speaker3",
+      "text": "车铺挺长的"
+    },
+    {
+      "start": 1758.099,
+      "end": 1758.98,
+      "speaker": "speaker3",
+      "text": "他是下车的吧"
+    },
+    {
+      "start": 1758.98,
+      "end": 1759.9,
+      "speaker": "speaker3",
+      "text": "上哪找去啊"
+    },
+    {
+      "start": 1759.9,
+      "end": 1761.619,
+      "speaker": "speaker3",
+      "text": "都早点已经走没眼了"
+    },
+    {
+      "start": 1761.619,
+      "end": 1762.46,
+      "speaker": "speaker3",
+      "text": "马上就到站了"
+    },
+    {
+      "start": 1762.46,
+      "end": 1782.68,
+      "speaker": "speaker3",
+      "text": "到开元站了"
+    },
+    {
+      "start": 1782.68,
+      "end": 1783.279,
+      "speaker": "TARGET",
+      "text": "吴总"
+    },
+    {
+      "start": 1783.279,
+      "end": 1783.72,
+      "speaker": "speaker3",
+      "text": "大彪"
+    },
+    {
+      "start": 1783.72,
+      "end": 1784.079,
+      "speaker": "speaker3",
+      "text": "哎"
+    },
+    {
+      "start": 1784.079,
+      "end": 1788.97,
+      "speaker": "speaker3",
+      "text": "来了"
+    },
+    {
+      "start": 1788.97,
+      "end": 1795.63,
+      "speaker": "speaker3",
+      "text": "这边坐"
+    },
+    {
+      "start": 1795.63,
+      "end": 1796.029,
+      "speaker": "speaker3",
+      "text": "坐坐坐"
+    },
+    {
+      "start": 1796.029,
+      "end": 1797.67,
+      "speaker": "speaker3",
+      "text": "请请客啊"
+    },
+    {
+      "start": 1797.67,
+      "end": 1799.819,
+      "speaker": "TARGET",
+      "text": "坐啊"
+    },
+    {
+      "start": 1799.819,
+      "end": 1800.9,
+      "speaker": "TARGET",
+      "text": "我做事啊"
+    },
+    {
+      "start": 1800.9,
+      "end": 1801.579,
+      "speaker": "TARGET",
+      "text": "来"
+    },
+    {
+      "start": 1801.579,
+      "end": 1815.22,
+      "speaker": "speaker3",
+      "text": "倒酒"
+    },
+    {
+      "start": 1815.22,
+      "end": 1815.779,
+      "speaker": "speaker3",
+      "text": "找你啊"
+    },
+    {
+      "start": 1815.779,
+      "end": 1817.9,
+      "speaker": "speaker3",
+      "text": "也没什么事"
+    },
+    {
+      "start": 1817.9,
+      "end": 1819.14,
+      "speaker": "speaker3",
+      "text": "就是过来"
+    },
+    {
+      "start": 1819.14,
+      "end": 1820.94,
+      "speaker": "speaker3",
+      "text": "咱俩喝喝酒"
+    },
+    {
+      "start": 1820.94,
+      "end": 1822.339,
+      "speaker": "TARGET",
+      "text": "这就是咱俩喝啊"
+    },
+    {
+      "start": 1822.339,
+      "end": 1823.299,
+      "speaker": "TARGET",
+      "text": "对啊"
+    },
+    {
+      "start": 1823.299,
+      "end": 1823.98,
+      "speaker": "TARGET",
+      "text": "这上齐了"
+    },
+    {
+      "start": 1823.98,
+      "end": 1825.819,
+      "speaker": "TARGET",
+      "text": "整菜也太多了"
+    },
+    {
+      "start": 1825.819,
+      "end": 1827.779,
+      "speaker": "TARGET",
+      "text": "差不多就行了"
+    },
+    {
+      "start": 1827.779,
+      "end": 1828.259,
+      "speaker": "speaker3",
+      "text": "怎么样"
+    },
+    {
+      "start": 1828.259,
+      "end": 1829.779,
+      "speaker": "speaker3",
+      "text": "总菜满意吗"
+    },
+    {
+      "start": 1829.779,
+      "end": 1830.7,
+      "speaker": "speaker3",
+      "text": "还行"
+    },
+    {
+      "start": 1830.7,
+      "end": 1832.819,
+      "speaker": "speaker3",
+      "text": "那个我有事找你啊"
+    },
+    {
+      "start": 1832.819,
+      "end": 1833.339,
+      "speaker": "speaker3",
+      "text": "行"
+    },
+    {
+      "start": 1833.339,
+      "end": 1834.42,
+      "speaker": "speaker3",
+      "text": "那吴总有事叫我"
+    },
+    {
+      "start": 1834.42,
+      "end": 1834.779,
+      "speaker": "speaker3",
+      "text": "好"
+    },
+    {
+      "start": 1834.779,
+      "end": 1839.18,
+      "speaker": "speaker3",
+      "text": "我先出去了"
+    },
+    {
+      "start": 1839.18,
+      "end": 1841.789,
+      "speaker": "speaker3",
+      "text": "哎"
+    },
+    {
+      "start": 1841.789,
+      "end": 1842.95,
+      "speaker": "speaker3",
+      "text": "这事啊"
+    },
+    {
+      "start": 1842.95,
+      "end": 1844.99,
+      "speaker": "speaker3",
+      "text": "我后来想了想"
+    },
+    {
+      "start": 1844.99,
+      "end": 1847.349,
+      "speaker": "speaker3",
+      "text": "心里也挺不得劲的"
+    },
+    {
+      "start": 1847.349,
+      "end": 1848.589,
+      "speaker": "speaker3",
+      "text": "也不能完全怪你"
+    },
+    {
+      "start": 1848.589,
+      "end": 1850.71,
+      "speaker": "TARGET",
+      "text": "这还是怪我"
+    },
+    {
+      "start": 1850.71,
+      "end": 1852.99,
+      "speaker": "TARGET",
+      "text": "我没法也好啊"
+    },
+    {
+      "start": 1852.99,
+      "end": 1853.39,
+      "speaker": "TARGET",
+      "text": "反正"
+    },
+    {
+      "start": 1853.39,
+      "end": 1854.47,
+      "speaker": "TARGET",
+      "text": "你这么一说"
+    },
+    {
+      "start": 1854.47,
+      "end": 1855.39,
+      "speaker": "TARGET",
+      "text": "我心里也行"
+    },
+    {
+      "start": 1855.39,
+      "end": 1856.75,
+      "speaker": "TARGET",
+      "text": "那啥来"
+    },
+    {
+      "start": 1856.75,
+      "end": 1857.349,
+      "speaker": "TARGET",
+      "text": "吃菜"
+    },
+    {
+      "start": 1857.349,
+      "end": 1865.099,
+      "speaker": "speaker3",
+      "text": "哎"
+    },
+    {
+      "start": 1865.099,
+      "end": 1866.38,
+      "speaker": "speaker3",
+      "text": "你也跟我这么多年了"
+    },
+    {
+      "start": 1866.38,
+      "end": 1867.66,
+      "speaker": "speaker3",
+      "text": "嗯"
+    },
+    {
+      "start": 1867.66,
+      "end": 1870.14,
+      "speaker": "speaker3",
+      "text": "我看你要是愿意的话"
+    },
+    {
+      "start": 1870.14,
+      "end": 1873.099,
+      "speaker": "speaker3",
+      "text": "你还是回来吧"
+    },
+    {
+      "start": 1873.099,
+      "end": 1875.71,
+      "speaker": "TARGET",
+      "text": "谢谢吴总"
+    },
+    {
+      "start": 1875.71,
+      "end": 1877.589,
+      "speaker": "TARGET",
+      "text": "你这事太太好了"
+    },
+    {
+      "start": 1877.589,
+      "end": 1880.109,
+      "speaker": "TARGET",
+      "text": "太讲究了"
+    },
+    {
+      "start": 1880.109,
+      "end": 1886.079,
+      "speaker": "TARGET",
+      "text": "全全在酒里了啊"
+    },
+    {
+      "start": 1886.079,
+      "end": 1888.759,
+      "speaker": "TARGET",
+      "text": "我回去我就回想啊"
+    },
+    {
+      "start": 1888.759,
+      "end": 1891.4,
+      "speaker": "TARGET",
+      "text": "我我就是昨昨天没烧香"
+    },
+    {
+      "start": 1891.4,
+      "end": 1892.92,
+      "speaker": "TARGET",
+      "text": "完了"
+    },
+    {
+      "start": 1892.92,
+      "end": 1894.92,
+      "speaker": "TARGET",
+      "text": "在小河口里翻大船了"
+    },
+    {
+      "start": 1894.92,
+      "end": 1895.559,
+      "speaker": "speaker3",
+      "text": "烧香"
+    },
+    {
+      "start": 1895.559,
+      "end": 1896.079,
+      "speaker": "speaker3",
+      "text": "嗯"
+    },
+    {
+      "start": 1896.64,
+      "end": 1898.079,
+      "speaker": "TARGET",
+      "text": "我这一天是什么时间了"
+    },
+    {
+      "start": 1898.079,
+      "end": 1899.839,
+      "speaker": "TARGET",
+      "text": "关公关老爷的关营厂"
+    },
+    {
+      "start": 1899.839,
+      "end": 1901.44,
+      "speaker": "TARGET",
+      "text": "天天烧香"
+    },
+    {
+      "start": 1901.44,
+      "end": 1907.759,
+      "speaker": "TARGET",
+      "text": "做做得棒的"
+    },
+    {
+      "start": 1907.759,
+      "end": 1912.4,
+      "speaker": "speaker3",
+      "text": "我记得你那会在贵宁餐馆当厨师的时候不是挺猛的吗"
+    },
+    {
+      "start": 1912.4,
+      "end": 1913.68,
+      "speaker": "speaker3",
+      "text": "外面一有人闹事"
+    },
+    {
+      "start": 1913.68,
+      "end": 1919.92,
+      "speaker": "speaker3",
+      "text": "就拎着菜刀就出去了"
+    },
+    {
+      "start": 1919.92,
+      "end": 1920.68,
+      "speaker": "TARGET",
+      "text": "不瞒你说啊"
+    },
+    {
+      "start": 1920.68,
+      "end": 1921.88,
+      "speaker": "TARGET",
+      "text": "那个时候吧"
+    },
+    {
+      "start": 1921.88,
+      "end": 1922.88,
+      "speaker": "TARGET",
+      "text": "就是一有菜刀"
+    },
+    {
+      "start": 1922.88,
+      "end": 1924.72,
+      "speaker": "TARGET",
+      "text": "我心里就有底"
+    },
+    {
+      "start": 1924.72,
+      "end": 1927.64,
+      "speaker": "TARGET",
+      "text": "完了心里一没菜刀了吧"
+    },
+    {
+      "start": 1927.64,
+      "end": 1929.72,
+      "speaker": "TARGET",
+      "text": "心里就没长那蓝儿的"
+    },
+    {
+      "start": 1929.72,
+      "end": 1931.039,
+      "speaker": "TARGET",
+      "text": "呵呵"
+    },
+    {
+      "start": 1931.039,
+      "end": 1932.4,
+      "speaker": "TARGET",
+      "text": "以后这么的吴总"
+    },
+    {
+      "start": 1932.4,
+      "end": 1934.68,
+      "speaker": "TARGET",
+      "text": "我配把菜刀啊"
+    },
+    {
+      "start": 1934.68,
+      "end": 1936.039,
+      "speaker": "TARGET",
+      "text": "谁一一惹事"
+    },
+    {
+      "start": 1936.039,
+      "end": 1939.48,
+      "speaker": "TARGET",
+      "text": "我咔咔我我我轮来"
+    },
+    {
+      "start": 1939.48,
+      "end": 1940.72,
+      "speaker": "speaker3",
+      "text": "真要给你弄把菜刀啊"
+    },
+    {
+      "start": 1940.72,
+      "end": 1941.64,
+      "speaker": "speaker3",
+      "text": "嗯"
+    },
+    {
+      "start": 1941.64,
+      "end": 1941.92,
+      "speaker": "speaker3",
+      "text": "哎呀"
+    },
+    {
+      "start": 1941.92,
+      "end": 1944.559,
+      "speaker": "speaker3",
+      "text": "我还真担心你会惹出点什么事"
+    },
+    {
+      "start": 1944.559,
+      "end": 1945.92,
+      "speaker": "TARGET",
+      "text": "不能人不犯我"
+    },
+    {
+      "start": 1945.92,
+      "end": 1949.64,
+      "speaker": "TARGET",
+      "text": "我不犯人人要犯我我必犯人"
+    },
+    {
+      "start": 1949.64,
+      "end": 1950.759,
+      "speaker": "speaker3",
+      "text": "哎"
+    },
+    {
+      "start": 1950.759,
+      "end": 1952.48,
+      "speaker": "speaker3",
+      "text": "我听说你外甥女来了"
+    },
+    {
+      "start": 1952.48,
+      "end": 1953.16,
+      "speaker": "TARGET",
+      "text": "嗯"
+    },
+    {
+      "start": 1953.16,
+      "end": 1955.4,
+      "speaker": "TARGET",
+      "text": "老家来的农村的"
+    },
+    {
+      "start": 1955.4,
+      "end": 1957.2,
+      "speaker": "TARGET",
+      "text": "让我给她安排个工作"
+    },
+    {
+      "start": 1957.2,
+      "end": 1958.279,
+      "speaker": "speaker3",
+      "text": "找到事了吗"
+    },
+    {
+      "start": 1958.279,
+      "end": 1963.609,
+      "speaker": "TARGET",
+      "text": "没有我这过过去没找到烂的"
+    },
+    {
+      "start": 1963.609,
+      "end": 1964.13,
+      "speaker": "speaker3",
+      "text": "那在咱们广场这儿找个事了吗"
+    },
+    {
+      "start": 1964.13,
+      "end": 1964.369,
+      "speaker": "speaker3",
+      "text": "那在咱们广场这儿找个事了吗"
+    },
+    {
+      "start": 1964.369,
+      "end": 1964.65,
+      "speaker": "speaker3",
+      "text": "那在咱们广场这儿找个事了吗"
+    },
+    {
+      "start": 1964.65,
+      "end": 1964.849,
+      "speaker": "speaker3",
+      "text": "那在咱们广场这儿找个事了吗"
+    },
+    {
+      "start": 1964.849,
+      "end": 1966.41,
+      "speaker": "speaker3",
+      "text": "那在咱们广场这儿找个事了"
+    },
+    {
+      "start": 1966.41,
+      "end": 1968.25,
+      "speaker": "TARGET",
+      "text": "你看怎么样"
+    },
+    {
+      "start": 1968.25,
+      "end": 1970.21,
+      "speaker": "TARGET",
+      "text": "那感觉好啊吴总"
+    },
+    {
+      "start": 1970.21,
+      "end": 1971.089,
+      "speaker": "speaker3",
+      "text": "行吧"
+    },
+    {
+      "start": 1971.089,
+      "end": 1973.609,
+      "speaker": "speaker3",
+      "text": "你把菜来吧"
+    },
+    {
+      "start": 1973.609,
+      "end": 1981.42,
+      "speaker": "TARGET",
+      "text": "嗯"
+    },
+    {
+      "start": 1981.42,
+      "end": 1982.539,
+      "speaker": "TARGET",
+      "text": "从你以后吴总啊"
+    },
+    {
+      "start": 1982.539,
+      "end": 2023.46,
+      "speaker": "TARGET",
+      "text": "我这命都是你的行不行吴总"
+    },
+    {
+      "start": 2023.46,
+      "end": 2026.38,
+      "speaker": "speaker3",
+      "text": "叫什么名字"
+    },
+    {
+      "start": 2026.38,
+      "end": 2030.38,
+      "speaker": "TARGET",
+      "text": "叫叫马尾翠"
+    },
+    {
+      "start": 2030.38,
+      "end": 2032.14,
+      "speaker": "speaker3",
+      "text": "那个今年多大"
+    },
+    {
+      "start": 2032.14,
+      "end": 2035.859,
+      "speaker": "TARGET",
+      "text": "十十九"
+    },
+    {
+      "start": 2035.859,
+      "end": 2036.9,
+      "speaker": "TARGET",
+      "text": "西翠是吧"
+    },
+    {
+      "start": 2036.9,
+      "end": 2039.74,
+      "speaker": "speaker3",
+      "text": "还挺腼腆呢"
+    },
+    {
+      "start": 2039.74,
+      "end": 2040.5,
+      "speaker": "speaker3",
+      "text": "是"
+    },
+    {
+      "start": 2040.5,
+      "end": 2042.22,
+      "speaker": "TARGET",
+      "text": "能能称出来的"
+    },
+    {
+      "start": 2042.22,
+      "end": 2043.38,
+      "speaker": "TARGET",
+      "text": "面"
+    },
+    {
+      "start": 2043.38,
+      "end": 2044.859,
+      "speaker": "TARGET",
+      "text": "说吧说吧说吧"
+    },
+    {
+      "start": 2044.859,
+      "end": 2046.18,
+      "speaker": "speaker3",
+      "text": "这样可不要"
+    },
+    {
+      "start": 2046.18,
+      "end": 2047.099,
+      "speaker": "speaker3",
+      "text": "你看看安排"
+    },
+    {
+      "start": 2047.099,
+      "end": 2047.94,
+      "speaker": "speaker3",
+      "text": "咱们的歌舞厅"
+    },
+    {
+      "start": 2047.94,
+      "end": 2049.86,
+      "speaker": "speaker3",
+      "text": "当个服务员行吗"
+    },
+    {
+      "start": 2049.86,
+      "end": 2051.3,
+      "speaker": "TARGET",
+      "text": "那还说啥呢"
+    },
+    {
+      "start": 2051.3,
+      "end": 2052.34,
+      "speaker": "TARGET",
+      "text": "那工资多好"
+    },
+    {
+      "start": 2052.34,
+      "end": 2053.5,
+      "speaker": "TARGET",
+      "text": "尬尬的那工作"
+    },
+    {
+      "start": 2054.659,
+      "end": 2055.139,
+      "speaker": "speaker3",
+      "text": "行行"
+    },
+    {
+      "start": 2055.139,
+      "end": 2056.5,
+      "speaker": "speaker3",
+      "text": "那就这么定"
+    },
+    {
+      "start": 2056.5,
+      "end": 2058.139,
+      "speaker": "speaker3",
+      "text": "回头我跟那儿打个招呼"
+    },
+    {
+      "start": 2058.139,
+      "end": 2059.579,
+      "speaker": "speaker3",
+      "text": "你直接把他带过去行吗"
+    },
+    {
+      "start": 2059.579,
+      "end": 2060.059,
+      "speaker": "speaker3",
+      "text": "好好好"
+    },
+    {
+      "start": 2060.059,
+      "end": 2060.5,
+      "speaker": "speaker3",
+      "text": "好吧"
+    },
+    {
+      "start": 2060.5,
+      "end": 2062.659,
+      "speaker": "speaker3",
+      "text": "行行行"
+    },
+    {
+      "start": 2062.659,
+      "end": 2063.46,
+      "speaker": "TARGET",
+      "text": "没事没事"
+    },
+    {
+      "start": 2063.46,
+      "end": 2064.98,
+      "speaker": "TARGET",
+      "text": "谢谢啊"
+    },
+    {
+      "start": 2064.98,
+      "end": 2066.139,
+      "speaker": "TARGET",
+      "text": "那我带他过去了"
+    },
+    {
+      "start": 2066.139,
+      "end": 2066.539,
+      "speaker": "TARGET",
+      "text": "行行行"
+    },
+    {
+      "start": 2066.539,
+      "end": 2066.86,
+      "speaker": "TARGET",
+      "text": "行吗"
+    },
+    {
+      "start": 2066.86,
+      "end": 2070.34,
+      "speaker": "TARGET",
+      "text": "行行行"
+    },
+    {
+      "start": 2070.34,
+      "end": 2070.98,
+      "speaker": "speaker3",
+      "text": "没事没事"
+    },
+    {
+      "start": 2070.98,
+      "end": 2071.94,
+      "speaker": "speaker3",
+      "text": "行行行"
+    },
+    {
+      "start": 2075.219,
+      "end": 2075.98,
+      "speaker": "speaker3",
+      "text": "尴尬了"
+    },
+    {
+      "start": 2075.98,
+      "end": 2177.38,
+      "speaker": "speaker3",
+      "text": "这家神志五号"
+    },
+    {
+      "start": 2177.38,
+      "end": 2178.539,
+      "speaker": "speaker2",
+      "text": "五毛钱一份哪"
+    },
+    {
+      "start": 2178.539,
+      "end": 2184.579,
+      "speaker": "speaker3",
+      "text": "你破不开就不怨我了"
+    },
+    {
+      "start": 2184.579,
+      "end": 2185.38,
+      "speaker": "speaker2",
+      "text": "你破不开"
+    },
+    {
+      "start": 2185.42,
+      "end": 2188.71,
+      "speaker": "speaker3",
+      "text": "你破不开就不怨我了"
+    },
+    {
+      "start": 2188.71,
+      "end": 2189.51,
+      "speaker": "speaker3",
+      "text": "我找个客人"
+    },
+    {
+      "start": 2189.51,
+      "end": 2203.369,
+      "speaker": "speaker3",
+      "text": "不要不要"
+    },
+    {
+      "start": 2203.369,
+      "end": 2204.17,
+      "speaker": "TARGET",
+      "text": "好"
+    },
+    {
+      "start": 2204.17,
+      "end": 2207.309,
+      "speaker": "TARGET",
+      "text": "我外边妈妈有事"
+    },
+    {
+      "start": 2207.309,
+      "end": 2208.51,
+      "speaker": "TARGET",
+      "text": "你好"
+    },
+    {
+      "start": 2208.51,
+      "end": 2210.23,
+      "speaker": "TARGET",
+      "text": "叫阿薇经理"
+    },
+    {
+      "start": 2210.23,
+      "end": 2211.269,
+      "speaker": "speaker3",
+      "text": "经理好"
+    },
+    {
+      "start": 2211.269,
+      "end": 2212.11,
+      "speaker": "speaker3",
+      "text": "吴总都给我说了"
+    },
+    {
+      "start": 2212.11,
+      "end": 2213.67,
+      "speaker": "speaker3",
+      "text": "下午就让她来上班吧"
+    },
+    {
+      "start": 2213.67,
+      "end": 2214.269,
+      "speaker": "speaker3",
+      "text": "好"
+    },
+    {
+      "start": 2214.269,
+      "end": 2215.429,
+      "speaker": "TARGET",
+      "text": "请走"
+    },
+    {
+      "start": 2215.429,
+      "end": 2216.23,
+      "speaker": "TARGET",
+      "text": "阿薇"
+    },
+    {
+      "start": 2217.829,
+      "end": 2220.23,
+      "speaker": "TARGET",
+      "text": "阿薇我"
+    },
+    {
+      "start": 2220.23,
+      "end": 2222.71,
+      "speaker": "TARGET",
+      "text": "我一直想跟你说"
+    },
+    {
+      "start": 2222.71,
+      "end": 2225.03,
+      "speaker": "speaker3",
+      "text": "咱俩好像在哪见过"
+    },
+    {
+      "start": 2225.03,
+      "end": 2226.389,
+      "speaker": "speaker3",
+      "text": "不是天天见吗"
+    },
+    {
+      "start": 2226.389,
+      "end": 2227.67,
+      "speaker": "TARGET",
+      "text": "不是"
+    },
+    {
+      "start": 2227.67,
+      "end": 2229.429,
+      "speaker": "TARGET",
+      "text": "你才来几天呢"
+    },
+    {
+      "start": 2229.429,
+      "end": 2231.949,
+      "speaker": "TARGET",
+      "text": "你没来之前我就觉着"
+    },
+    {
+      "start": 2231.989,
+      "end": 2234.03,
+      "speaker": "TARGET",
+      "text": "不可能吧"
+    },
+    {
+      "start": 2234.03,
+      "end": 2235.07,
+      "speaker": "TARGET",
+      "text": "这真的呀"
+    },
+    {
+      "start": 2235.07,
+      "end": 2237.11,
+      "speaker": "TARGET",
+      "text": "咋 咋回事呢"
+    },
+    {
+      "start": 2237.11,
+      "end": 2240.98,
+      "speaker": "TARGET",
+      "text": "前世有缘"
+    },
+    {
+      "start": 2240.98,
+      "end": 2243.9,
+      "speaker": "speaker3",
+      "text": "也许吧"
+    },
+    {
+      "start": 2243.9,
+      "end": 2249.78,
+      "speaker": "speaker3",
+      "text": "不救了"
+    },
+    {
+      "start": 2249.78,
+      "end": 2270.26,
+      "speaker": "speaker3",
+      "text": "翠儿"
+    },
+    {
+      "start": 2270.26,
+      "end": 2273.42,
+      "speaker": "TARGET",
+      "text": "你脚这好好的咋样"
+    },
+    {
+      "start": 2273.42,
+      "end": 2275.46,
+      "speaker": "speaker3",
+      "text": "挺好的"
+    },
+    {
+      "start": 2275.46,
+      "end": 2278.659,
+      "speaker": "TARGET",
+      "text": "看出来对我对我啥意思呗"
+    },
+    {
+      "start": 2278.659,
+      "end": 2279.739,
+      "speaker": "speaker3",
+      "text": "啥意思"
+    },
+    {
+      "start": 2279.739,
+      "end": 2281.86,
+      "speaker": "TARGET",
+      "text": "啥意思"
+    },
+    {
+      "start": 2281.86,
+      "end": 2284.5,
+      "speaker": "TARGET",
+      "text": "我说咱俩前世有缘"
+    },
+    {
+      "start": 2284.5,
+      "end": 2286.9,
+      "speaker": "TARGET",
+      "text": "她说一句也许听得见呗"
+    },
+    {
+      "start": 2286.9,
+      "end": 2287.94,
+      "speaker": "speaker3",
+      "text": "走啊走啊走啊"
+    },
+    {
+      "start": 2287.98,
+      "end": 2290.219,
+      "speaker": "speaker3",
+      "text": "你跟她不合适"
+    },
+    {
+      "start": 2290.219,
+      "end": 2291.059,
+      "speaker": "speaker3",
+      "text": "走"
+    },
+    {
+      "start": 2291.059,
+      "end": 2296.17,
+      "speaker": "TARGET",
+      "text": "我跟谁合适"
+    },
+    {
+      "start": 2296.17,
+      "end": 2297.969,
+      "speaker": "speaker3",
+      "text": "感觉你跟那个"
+    },
+    {
+      "start": 2297.969,
+      "end": 2300.17,
+      "speaker": "speaker3",
+      "text": "餐馆老板娘挺合适的"
+    },
+    {
+      "start": 2300.17,
+      "end": 2301.369,
+      "speaker": "TARGET",
+      "text": "不一样啊"
+    },
+    {
+      "start": 2301.369,
+      "end": 2302.929,
+      "speaker": "TARGET",
+      "text": "那不扯呢"
+    },
+    {
+      "start": 2302.929,
+      "end": 2304.69,
+      "speaker": "TARGET",
+      "text": "就是她"
+    },
+    {
+      "start": 2304.69,
+      "end": 2307.05,
+      "speaker": "speaker3",
+      "text": "你也不高啊"
+    },
+    {
+      "start": 2307.05,
+      "end": 2309.25,
+      "speaker": "TARGET",
+      "text": "我有才呀"
+    },
+    {
+      "start": 2309.25,
+      "end": 2310.369,
+      "speaker": "TARGET",
+      "text": "郎才女貌"
+    },
+    {
+      "start": 2310.369,
+      "end": 2311.889,
+      "speaker": "TARGET",
+      "text": "我得找个漂亮的"
+    },
+    {
+      "start": 2311.889,
+      "end": 2335.329,
+      "speaker": "speaker2",
+      "text": "多少块钱"
+    },
+    {
+      "start": 2335.329,
+      "end": 2335.889,
+      "speaker": "speaker3",
+      "text": "多少"
+    },
+    {
+      "start": 2335.889,
+      "end": 2356.96,
+      "speaker": "speaker2",
+      "text": "二十八"
+    },
+    {
+      "start": 2356.96,
+      "end": 2359.239,
+      "speaker": "speaker2",
+      "text": "你得换一张吧"
+    },
+    {
+      "start": 2359.239,
+      "end": 2360.4,
+      "speaker": "speaker2",
+      "text": "换一张干啥呀"
+    },
+    {
+      "start": 2360.4,
+      "end": 2361.159,
+      "speaker": "speaker2",
+      "text": "找钱"
+    },
+    {
+      "start": 2361.719,
+      "end": 2362.48,
+      "speaker": "speaker2",
+      "text": "假钱"
+    },
+    {
+      "start": 2362.48,
+      "end": 2363.0,
+      "speaker": "speaker2",
+      "text": "什么"
+    },
+    {
+      "start": 2363.0,
+      "end": 2367.23,
+      "speaker": "speaker2",
+      "text": "已经是假钱"
+    },
+    {
+      "start": 2367.23,
+      "end": 2368.829,
+      "speaker": "speaker2",
+      "text": "假钱"
+    },
+    {
+      "start": 2368.829,
+      "end": 2369.909,
+      "speaker": "speaker2",
+      "text": "根据啥呀"
+    },
+    {
+      "start": 2369.909,
+      "end": 2373.38,
+      "speaker": "speaker2",
+      "text": "我们那有验钞机"
+    },
+    {
+      "start": 2373.38,
+      "end": 2376.82,
+      "speaker": "speaker2",
+      "text": "按道理我们都应该给你没收"
+    },
+    {
+      "start": 2376.82,
+      "end": 2378.86,
+      "speaker": "speaker2",
+      "text": "这怎么可能就是假的呢"
+    },
+    {
+      "start": 2378.86,
+      "end": 2381.3,
+      "speaker": "speaker2",
+      "text": "我这不信你"
+    },
+    {
+      "start": 2381.3,
+      "end": 2382.46,
+      "speaker": "speaker2",
+      "text": "要不咱上菜桌"
+    },
+    {
+      "start": 2382.46,
+      "end": 2384.5,
+      "speaker": "speaker2",
+      "text": "不跟你废话"
+    },
+    {
+      "start": 2384.5,
+      "end": 2390.369,
+      "speaker": "speaker2",
+      "text": "我就这一张"
+    },
+    {
+      "start": 2390.369,
+      "end": 2391.13,
+      "speaker": "speaker2",
+      "text": "你一张"
+    },
+    {
+      "start": 2391.13,
+      "end": 2393.69,
+      "speaker": "speaker3",
+      "text": "老板 要不咱就这一张"
+    },
+    {
+      "start": 2393.69,
+      "end": 2397.73,
+      "speaker": "speaker2",
+      "text": "不是 我我我"
+    },
+    {
+      "start": 2397.73,
+      "end": 2398.53,
+      "speaker": "speaker2",
+      "text": "干啥呀"
+    },
+    {
+      "start": 2398.53,
+      "end": 2399.969,
+      "speaker": "speaker2",
+      "text": "那什么同事整个事儿"
+    },
+    {
+      "start": 2399.969,
+      "end": 2401.489,
+      "speaker": "speaker2",
+      "text": "我跟你说这个经过啊"
+    },
+    {
+      "start": 2401.489,
+      "end": 2404.17,
+      "speaker": "speaker2",
+      "text": "我今天呢刚从农村来"
+    },
+    {
+      "start": 2404.17,
+      "end": 2405.849,
+      "speaker": "speaker2",
+      "text": "完事儿呢我是找我小舅子"
+    },
+    {
+      "start": 2405.849,
+      "end": 2407.25,
+      "speaker": "speaker2",
+      "text": "我小舅子叫范德彪"
+    },
+    {
+      "start": 2407.25,
+      "end": 2409.09,
+      "speaker": "speaker2",
+      "text": "挺大脑的圆乎的那个"
+    },
+    {
+      "start": 2409.09,
+      "end": 2411.329,
+      "speaker": "speaker2",
+      "text": "也是跟你们同行炒菜的"
+    },
+    {
+      "start": 2411.329,
+      "end": 2413.65,
+      "speaker": "speaker2",
+      "text": "到这儿呢我就让小偷给掏了"
+    },
+    {
+      "start": 2413.65,
+      "end": 2417.17,
+      "speaker": "speaker2",
+      "text": "掏了完了 我我我"
+    },
+    {
+      "start": 2417.17,
+      "end": 2418.449,
+      "speaker": "speaker2",
+      "text": "这钱减的"
+    },
+    {
+      "start": 2418.449,
+      "end": 2419.289,
+      "speaker": "speaker2",
+      "text": "你也别废话"
+    },
+    {
+      "start": 2419.289,
+      "end": 2420.09,
+      "speaker": "speaker2",
+      "text": "我不跟你那样"
+    },
+    {
+      "start": 2420.09,
+      "end": 2421.489,
+      "speaker": "speaker2",
+      "text": "要不咱派索上去啊"
+    },
+    {
+      "start": 2421.489,
+      "end": 2423.65,
+      "speaker": "speaker2",
+      "text": "别别的我我我下次来吧"
+    },
+    {
+      "start": 2423.65,
+      "end": 2425.01,
+      "speaker": "speaker2",
+      "text": "我有有钱的时候"
+    },
+    {
+      "start": 2425.01,
+      "end": 2426.21,
+      "speaker": "speaker2",
+      "text": "我就给你带着行不行"
+    },
+    {
+      "start": 2426.21,
+      "end": 2427.01,
+      "speaker": "speaker2",
+      "text": "少废话"
+    },
+    {
+      "start": 2427.01,
+      "end": 2428.65,
+      "speaker": "speaker2",
+      "text": "要不咱上派索去"
+    },
+    {
+      "start": 2428.65,
+      "end": 2429.73,
+      "speaker": "speaker2",
+      "text": "别的"
+    },
+    {
+      "start": 2429.969,
+      "end": 2431.329,
+      "speaker": "speaker2",
+      "text": "别打仗"
+    },
+    {
+      "start": 2431.329,
+      "end": 2432.369,
+      "speaker": "speaker3",
+      "text": "走吧 走吧"
+    },
+    {
+      "start": 2432.369,
+      "end": 2433.409,
+      "speaker": "speaker3",
+      "text": "农村人也不懂这些"
+    },
+    {
+      "start": 2433.409,
+      "end": 2434.21,
+      "speaker": "speaker3",
+      "text": "别打仗"
+    },
+    {
+      "start": 2434.21,
+      "end": 2434.929,
+      "speaker": "speaker3",
+      "text": "走吧 走吧"
+    },
+    {
+      "start": 2434.929,
+      "end": 2435.73,
+      "speaker": "speaker3",
+      "text": "农村人也不懂这些"
+    },
+    {
+      "start": 2435.73,
+      "end": 2436.53,
+      "speaker": "speaker3",
+      "text": "我跟你过去"
+    },
+    {
+      "start": 2436.53,
+      "end": 2437.69,
+      "speaker": "speaker3",
+      "text": "有啥会儿好好说"
+    },
+    {
+      "start": 2437.69,
+      "end": 2447.289,
+      "speaker": "speaker2",
+      "text": "这用得着打仗"
+    },
+    {
+      "start": 2447.289,
+      "end": 2448.329,
+      "speaker": "speaker2",
+      "text": "你走 没事儿"
+    },
+    {
+      "start": 2448.329,
+      "end": 2449.17,
+      "speaker": "speaker2",
+      "text": "没啥事儿"
+    },
+    {
+      "start": 2449.17,
+      "end": 2449.849,
+      "speaker": "speaker2",
+      "text": "快点儿去"
+    },
+    {
+      "start": 2449.849,
+      "end": 2455.44,
+      "speaker": "speaker2",
+      "text": "不难为你啊"
+    },
+    {
+      "start": 2455.44,
+      "end": 2465.76,
+      "speaker": "TARGET",
+      "text": "把这顿盘子扫了"
+    },
+    {
+      "start": 2465.76,
+      "end": 2467.519,
+      "speaker": "TARGET",
+      "text": "就定这顿饭钱了"
+    },
+    {
+      "start": 2467.519,
+      "end": 2468.559,
+      "speaker": "speaker2",
+      "text": "你看这儿啊"
+    },
+    {
+      "start": 2468.559,
+      "end": 2470.119,
+      "speaker": "speaker2",
+      "text": "你这饭店是不是"
+    },
+    {
+      "start": 2470.119,
+      "end": 2471.32,
+      "speaker": "speaker2",
+      "text": "半个月没扫完呢"
+    },
+    {
+      "start": 2471.32,
+      "end": 2472.079,
+      "speaker": "speaker2",
+      "text": "闲多了"
+    },
+    {
+      "start": 2472.079,
+      "end": 2473.36,
+      "speaker": "speaker2",
+      "text": "这就够照顾你的了"
+    },
+    {
+      "start": 2473.36,
+      "end": 2474.119,
+      "speaker": "speaker2",
+      "text": "扫吧啊"
+    },
+    {
+      "start": 2474.119,
+      "end": 2475.32,
+      "speaker": "speaker2",
+      "text": "扫不干净不算数"
+    },
+    {
+      "start": 2475.32,
+      "end": 2479.38,
+      "speaker": "TARGET",
+      "text": "没事儿 自己整水价"
+    },
+    {
+      "start": 2479.38,
+      "end": 2480.019,
+      "speaker": "TARGET",
+      "text": "扫喽"
+    },
+    {
+      "start": 2480.019,
+      "end": 2481.38,
+      "speaker": "TARGET",
+      "text": "去 给你整水价"
+    },
+    {
+      "start": 2481.38,
+      "end": 2482.019,
+      "speaker": "speaker2",
+      "text": "扫喽"
+    },
+    {
+      "start": 2482.019,
+      "end": 2482.82,
+      "speaker": "TARGET",
+      "text": "扫喽"
+    },
+    {
+      "start": 2482.82,
+      "end": 2483.42,
+      "speaker": "TARGET",
+      "text": "扫喽"
+    },
+    {
+      "start": 2483.42,
+      "end": 2484.099,
+      "speaker": "TARGET",
+      "text": "给你整水价"
+    },
+    {
+      "start": 2484.099,
+      "end": 2484.699,
+      "speaker": "TARGET",
+      "text": "快"
+    }
+  ],
+  "source": {
+    "generated_from": "srt",
+    "srt_path": "output/Zs8jUFaqtCI/《马大帅》EP 01 ｜ 《漫长的季节》爆笑喜剧版 （赵本山，范伟）_Zs8jUFaqtCI_16k_mono.srt"
+  }
+}

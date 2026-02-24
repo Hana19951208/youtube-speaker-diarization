@@ -42,6 +42,7 @@ runs/
 *.m4a
 *.webm
 speaker_samples/
+videos/
 *.tmp
 *.log
 
