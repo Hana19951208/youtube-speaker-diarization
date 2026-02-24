@@ -7,8 +7,6 @@ from collections import defaultdict
 from typing import Dict, List, Tuple, Optional, Any
 import numpy as np
 import torch
-import torchaudio
-import torch.nn.functional as F
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -87,33 +85,20 @@ class SpeakerMatcher:
             return self._extract_spectral_features(audio_path)
         
         try:
-            from speechbrain.dataio.preprocess import AudioNormalizer
-            
-            # Load audio
-            signal, fs = torchaudio.load(audio_path)
-            
-            # Convert to mono if stereo
-            if signal.shape[0] > 1:
-                signal = torch.mean(signal, dim=0, keepdim=True)
-            
-            # Resample to 16kHz if needed
-            if fs != 16000:
-                resampler = torchaudio.transforms.Resample(fs, 16000)
-                signal = resampler(signal)
-            
-            # Move to device
-            signal = signal.to(self.device)
-            
+            # Load audio via librosa to avoid torchaudio binary mismatch on Kaggle
+            import librosa
+
+            y, fs = librosa.load(audio_path, sr=16000, mono=True)
+            signal = torch.tensor(y, dtype=torch.float32).unsqueeze(0).to(self.device)
+
             # Extract embedding
             with torch.no_grad():
                 embeddings = self.embedding_model.encode_batch(signal)
                 embedding = embeddings[0].cpu().numpy()
-            
-            # Normalize embedding
+
             embedding = embedding / np.linalg.norm(embedding)
-            
             return embedding
-            
+
         except Exception as e:
             logger.error(f"Failed to extract embedding: {e}")
             logger.warning("Falling back to spectral features")

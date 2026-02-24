@@ -10,7 +10,6 @@ from typing import Optional, Tuple, List
 import numpy as np
 from pydub import AudioSegment
 import torch
-import torchaudio
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -208,31 +207,27 @@ def load_audio(audio_path: str, sample_rate: int = 16000) -> Tuple[np.ndarray, i
         Tuple of (audio_array, sample_rate)
     """
     try:
-        # Use torchaudio for loading
+        # Prefer torchaudio when available
+        import torchaudio
+
         waveform, sr = torchaudio.load(audio_path)
-        
-        # Convert to mono if stereo
+
         if waveform.shape[0] > 1:
             waveform = torch.mean(waveform, dim=0, keepdim=True)
-        
-        # Resample if needed
+
         if sr != sample_rate:
             resampler = torchaudio.transforms.Resample(sr, sample_rate)
             waveform = resampler(waveform)
-        
-        # Convert to numpy
+
         audio_array = waveform.squeeze().numpy()
-        
         return audio_array, sample_rate
-        
+
     except Exception as e:
-        logger.error(f"Failed to load audio: {e}")
-        # Fallback to pydub
+        logger.warning(f"torchaudio load failed, fallback to pydub: {e}")
         try:
             audio = AudioSegment.from_file(audio_path)
             audio = audio.set_frame_rate(sample_rate).set_channels(1)
             audio_array = np.array(audio.get_array_of_samples(), dtype=np.float32)
-            # Normalize to [-1, 1]
             audio_array = audio_array / (2**15)
             return audio_array, sample_rate
         except Exception as e2:
