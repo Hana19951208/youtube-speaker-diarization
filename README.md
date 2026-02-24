@@ -131,7 +131,7 @@ print("import ok")
 1. 上传/打开该 Kaggle 版本 notebook
 2. 在 Notebook Settings 启用 GPU
 3. 建议开启 Session Persistence（缓存更稳）
-4. 从“一键初始化”cell开始顺序执行
+4. 从“一键初始化”cell开始顺序执行（该 cell 会从 GitHub 安装官方 whisperx，避免 PyPI yanked 版本问题）
 
 ## Output Files
 
