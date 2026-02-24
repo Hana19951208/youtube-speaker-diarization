@@ -74,3 +74,5 @@ echo "  1) source $VENV_DIR/bin/activate"
 echo "  2) source $REPO_DIR/.env.autodl"
 echo "  3) export HF_TOKEN=你的token"
 echo "  4) python main.py --youtube_url 'https://www.youtube.com/watch?v=xxx' --ref_audio /path/to/ref.wav --language zh --no_separation"
+
+# python main.py --youtube_url 'https://www.youtube.com/watch?v=Zs8jUFaqtCI' --ref_audio biao.mp3 --language zh --no_separation

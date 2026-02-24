@@ -35,7 +35,9 @@ env/
 
 # Output and cache directories
 work/
+.cache/
 cache/
+.env*
 runs/
 *.m4a
 *.webm
