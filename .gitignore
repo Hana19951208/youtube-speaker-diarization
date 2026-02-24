@@ -36,12 +36,10 @@ env/
 # Output and cache directories
 work/
 cache/
-output/
 runs/
 *.m4a
 *.webm
-*.srt
-*.json
+
 *.tmp
 *.log
 
