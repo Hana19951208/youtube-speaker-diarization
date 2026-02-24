@@ -38,8 +38,6 @@ work/
 cache/
 output/
 runs/
-*.wav
-*.mp3
 *.m4a
 *.webm
 *.srt
