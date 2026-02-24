@@ -3,7 +3,7 @@ ASR module using WhisperX for transcription and word-level alignment.
 """
 import os
 import logging
-from typing import List, Dict, Any, Optional
+from typing import List, Dict,Tuple, Any, Optional
 import torch
 import numpy as np
 
