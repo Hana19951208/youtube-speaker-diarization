@@ -14,6 +14,13 @@ YOUTUBE_URL="https://www.youtube.com/watch?v=Zs8jUFaqtCI"
 # 3) 输出目录（默认 output/videos）
 OUTPUT_DIR="output/videos"
 
+# 4) 压缩参数
+ENABLE_COMPRESS=true
+DELETE_ORIGINAL=true      # true: 压缩后删除原视频，仅保留压缩版
+CRF=28                    # 越大体积越小，画质越低（常用 23~30）
+PRESET="medium"          # ultrafast/superfast/veryfast/faster/fast/medium/slow/slower
+AUDIO_BITRATE="128k"
+
 # =========================
 # 执行逻辑
 # =========================
@@ -51,4 +58,38 @@ yt-dlp \
   -o "$OUTPUT_DIR/%(title)s.%(ext)s" \
   "$YOUTUBE_URL"
 
-echo "✅ 下载完成：$OUTPUT_DIR"
+if [[ "$ENABLE_COMPRESS" == "true" ]]; then
+  echo "🗜 开始压缩视频..."
+
+  shopt -s nullglob
+  files=("$OUTPUT_DIR"/*.mp4 "$OUTPUT_DIR"/*.mkv "$OUTPUT_DIR"/*.webm "$OUTPUT_DIR"/*.mov)
+
+  if [[ ${#files[@]} -eq 0 ]]; then
+    echo "⚠️ 未找到可压缩视频文件"
+  fi
+
+  for src in "${files[@]}"; do
+    # 跳过已压缩文件
+    if [[ "$src" == *_compressed.mp4 ]]; then
+      continue
+    fi
+
+    base_no_ext="${src%.*}"
+    dst="${base_no_ext}_compressed.mp4"
+
+    echo "  - 压缩: $(basename "$src")"
+    ffmpeg -y -i "$src" \
+      -c:v libx264 -preset "$PRESET" -crf "$CRF" \
+      -c:a aac -b:a "$AUDIO_BITRATE" \
+      "$dst"
+
+    if [[ "$DELETE_ORIGINAL" == "true" ]]; then
+      rm -f "$src"
+      echo "    已删除原文件，保留: $(basename "$dst")"
+    else
+      echo "    已保留原文件和压缩文件"
+    fi
+  done
+fi
+
+echo "✅ 下载+压缩完成：$OUTPUT_DIR"
